@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">MagTek SCRA Demo</string>
+    <!--  Bluetooth -->
+    <string name="app_version">100.23</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected_to">Connected: </string>
+    <string name="title_not_connected">Not connected</string>
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <!--  DeviceScanActivity -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device Address:</string>
+    <string name="label_state">Connection State:</string>
+    <string name="label_session_info">Passed | Failed:</string>
+    <string name="label_sn">Serial Number:</string>
+    <string name="value_blank"> </string>
+    <string name="value_yes">Yes</string>
+    <string name="value_no">No</string>
+    <string name="value_okc">OK</string>
+    <string name="value_cancel">Cancel</string>
+    <string name="connected">Connected</string>
+    <string name="connecting">Connecting</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="title_audio_devices">Audio Devices</string>
+    <string name="title_bluetooth_devices">Bluetooth Devices</string>
+    <string name="title_ble_devices">BLE Devices</string>
+    <string name="title_ble_emv_devices">BLE EMV Devices</string>
+    <string name="title_ble_emv_t_devices">BLE EMVT Devices</string>
+    <string name="title_usb_devices">USB Devices</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_audio">Audio</string>
+    <string name="menu_audio_config_default">Use Default Config</string>
+    <string name="menu_audio_config_manual">Use Manual Config</string>
+    <string name="menu_audio_config_file">Use Config File</string>
+    <string name="menu_audio_config_server">Use Config From Server</string>
+    <string name="menu_usb">USB</string>
+    <string name="menu_bluetooth">Bluetooth</string>
+    <string name="menu_ble">BLE</string>
+    <string name="menu_ble_emv">BLE EMV</string>
+    <string name="menu_ble_emvt">BLE EMVT</string>
+    <string name="menu_serial">Serial</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_clear_display">Clear</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_commands">Commands...</string>
+    <string name="menu_emv">EMV</string>
+    <string name="menu_start_transaction">Start Transaction</string>
+    <string name="menu_cancel_transaction">Cancel Transaction</string>
+    <string name="menu_connection_retry">Connection Retry</string>
+
+    <string name="menu_emv_options">EMV Options</string>
+    <string name="menu_emv_set_time">Set Time</string>
+    <string name="menu_emv_approved">Approved</string>
+    <string name="menu_emv_declined">Declined</string>
+    <string name="menu_emv_quickchip">Quick Chip</string>
+    <string name="menu_emv_set_datetime">Set Date/Time</string>
+    <string name="menu_emv_configuration">Configuration</string>
+    <string name="menu_emv_get_terminal_config">Get Terminal Config</string>
+    <string name="menu_emv_set_terminal_config">Set Terminal Config</string>
+    <string name="menu_emv_commit_config">Commit Config</string>
+    <string name="menu_options">Options</string>
+    <!-- Options Menu -->
+    <string name="connect">Connect...</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="exit">Exit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

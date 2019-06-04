@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mtscra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/mtscra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

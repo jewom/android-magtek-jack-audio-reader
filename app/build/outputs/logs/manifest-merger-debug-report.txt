@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-43:12
+	package
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:4:62-108
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:4:33-61
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:4:5-32
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+	android:targetSdkVersion
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:15-44
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-46
+		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:7:19-63
+uses-feature#android.hardware.usb.host
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:8:5-62
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:8:19-59
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:12:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:17:5-78
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:17:22-76
+application
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:19:5-41:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:19:18-50
+	android:icon
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:21:9-42
+	android:allowBackup
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:20:9-36
+activity#com.magtek.mobile.android.mtscrademo.DeviceScanActivity
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:22:9-31:20
+	android:screenOrientation
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:23:13-45
+	android:uiOptions
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:26:13-57
+	android:configChanges
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:24:13-59
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:22:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.magtek.mobile.android.mtscrademo.MagTekDemo
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:32:9-40:20
+	android:screenOrientation
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:34:13-49
+	android:launchMode
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:35:13-44
+	android:uiOptions
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:36:13-57
+	android:configChanges
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:33:13-59
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:32:19-45
+meta-data#android.support.UI_OPTIONS
+ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:38:13-39:60
+	android:value
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:39:17-57
+	android:name
+		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:38:24-65
