@@ -5,23 +5,28 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="CLASS_ADDED"
     plugin-version="3.4.1"
-    timestamp="1559662753680"
+    timestamp="1559663130150"
     token="-3839133264068353169"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="80" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="28" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
+
+    <artifact
+        location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
@@ -94,15 +99,17 @@
             location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1559662753680"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1559663130150"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>

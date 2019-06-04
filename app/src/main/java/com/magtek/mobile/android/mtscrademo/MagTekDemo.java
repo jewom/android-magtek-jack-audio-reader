@@ -41,7 +41,6 @@ import com.magtek.mobile.android.mtlib.IMTCardData;
 public class MagTekDemo extends Activity {
     private final static String TAG = "MagTekJewom";
 
-    private Menu mMainMenu;
     private TextView mMessageTextView;
     private TextView mMessageTextView2;
     private TextView mConnectionStateField;
@@ -399,44 +398,24 @@ public class MagTekDemo extends Activity {
     }
 
     @Override
-    protected void onResume()
-    {
+    protected void onResume() {
         super.onResume();
-
         this.registerReceiver(m_headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
         this.registerReceiver(m_noisyAudioStreamReceiver, new IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY));
-
-        Log.i(TAG, "*** App onResume");
     }
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
         super.onPause();
-
-        Log.i(TAG, "*** App onPause");
-
-        if (m_scra.isDeviceConnected())
-        {
+        if (m_scra.isDeviceConnected()) {
             if (m_connectionType == MTConnectionType.Audio)
-            {
                 m_scra.closeDevice();
-            }
         }
     }
 
-    @Override
-    protected void onStop()
-    {
-        super.onStop();
-
-        Log.i(TAG, "*** App onStop");
-    }
 
     @Override
-    protected void onDestroy()
-    {
-        Log.i(TAG, "*** App onDestroy");
+    protected void onDestroy() {
 
         unregisterReceiver(m_headsetReceiver);
         unregisterReceiver(m_noisyAudioStreamReceiver);
@@ -449,81 +428,8 @@ public class MagTekDemo extends Activity {
     }
 
 
-    private void sendSetDateTimeCommand()
-    {
-        Calendar now = Calendar.getInstance();
 
-        int month = now.get(Calendar.MONTH) + 1;
-        int day = now.get(Calendar.DAY_OF_MONTH);
-        int hour = now.get(Calendar.HOUR_OF_DAY);
-        int minute = now.get(Calendar.MINUTE);
-        int second = now.get(Calendar.SECOND);
-        int year = now.get(Calendar.YEAR) - 2008;
-
-        String dateTimeString = String.format("%1$02x%2$02x%3$02x%4$02x%5$02x00%6$02x", month, day, hour, minute, second, year);
-        String command = "49220000030C001C0000000000000000000000000000000000" + dateTimeString + "00000000";
-        sendCommand(command);
-    }
-
-    private class getDeviceInfoTask extends AsyncTask<String, Void, String>
-    {
-        @Override
-        protected String doInBackground(String... params)
-        {
-            String response = sendCommandSync("000100");
-            sendToDisplay("[Firmware ID]");
-            sendToDisplay(response);
-
-            String response2 = sendCommandSync("000103");
-            sendToDisplay("[Device SN]");
-            sendToDisplay(response2);
-
-            String response3 = sendCommandSync("1500");
-            sendToDisplay("[Security Level]");
-            sendToDisplay(response3);
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-        }
-    }
-
-    private class getBatteryLevelTask extends AsyncTask<String, Void, String>
-    {
-        @Override
-        protected String doInBackground(String... params)
-        {
-            long level = m_scra.getBatteryLevel();
-            sendToDisplay("Battery Level=" + level);
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-        }
-    }
-
-    private void displayDeviceFeatures()
-    {
+    private void displayDeviceFeatures() {
         if (m_scra != null)
         {
             MTDeviceFeatures features = m_scra.getDeviceFeatures();
@@ -541,138 +447,47 @@ public class MagTekDemo extends Activity {
         }
     }
 
-    private void getDeviceInfo()
-    {
-        new getDeviceInfoTask().execute();
-    }
-
-    private void getBatteryLevel()
-    {
-        new getBatteryLevelTask().execute();
-    }
-
-    private void getKSN()
-    {
-        if (m_scra != null)
-        {
-            sendToDisplay("[Get KSN]");
-            String ksn = m_scra.getKSN();
-            sendToDisplay("KSN=" +  ksn);
-        }
-    }
-
-    private void clearBuffers()
-    {
-        if (m_scra != null)
-        {
-            sendToDisplay("[Clear Buffers]");
-            m_scra.clearBuffers();
-        }
-    }
-
-    private void setMSRPower(boolean state)
-    {
-        String command = "5801" + (state ? "01":"00");
-
-        sendCommand(command);
-    }
-
-    private void requestEMVMessageFormat()
-    {
+    private void sendGetSecurityLevelCommand() {
         Handler delayHandler = new Handler();
         delayHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                m_emvMessageFormatRequestPending = true;
-
-                int status = sendCommand("000168");
-
-                if (status != MTSCRA.SEND_COMMAND_SUCCESS)
-                {
-                    m_emvMessageFormatRequestPending = false;
-                }
-            }
-        }, 1000);
-    }
-
-    private void sendGetSecurityLevelCommand()
-    {
-        Handler delayHandler = new Handler();
-        delayHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                int status = sendCommand("1500");
+                sendCommand("1500");
 
             }
         }, 1000);
     }
 
 
-    public String sendCommandSync(String command)
-    {
-        String response = "";
 
-        m_syncData = "";
-        m_syncEvent = new Object();
-
-        synchronized(m_syncEvent)
-        {
-            sendCommand(command);
-
-            try
-            {
-                m_syncEvent.wait(3000);
-                response = new String(m_syncData);
-            }
-            catch (InterruptedException ex)
-            {
-                // response timed out
-            }
-        }
-
-        m_syncEvent = null;
-
-        return response;
-    }
-
-    public int sendCommand(String command)
-    {
+    public int sendCommand(String command) {
         int result = MTSCRA.SEND_COMMAND_ERROR;
-
-
-        if (m_scra != null)
-        {
+        if (m_scra != null) {
             sendToDisplay("[Sending Command]");
             sendToDisplay(command);
-
             result = m_scra.sendCommandToDevice(command);
         }
 
         return result;
     }
 
-    public void startTransactionWithLED()
-    {
+    public void startTransactionWithLED() {
         m_startTransactionActionPending = true;
         setLED(true);
     }
 
-    public void startTransaction()
-    {
+    public void startTransaction() {
         byte type = 0;
 
-        if (mTypeChecked[0])
-        {
+        if (mTypeChecked[0]) {
             type |= (byte) 0x01;
         }
 
-        if (mTypeChecked[1])
-        {
+        if (mTypeChecked[1]) {
             type |= (byte) 0x02;
         }
 
-        if (mTypeChecked[2])
-        {
+        if (mTypeChecked[2]) {
             type |= (byte) 0x04;
         }
 
