@@ -1,15 +1,8 @@
 package com.magtek.mobile.android.mtscrademo;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ListIterator;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -36,7 +29,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.magtek.mobile.android.mtlib.MTDeviceFeatures;
-import com.magtek.mobile.android.mtlib.MTEMVDeviceConstants;
 import com.magtek.mobile.android.mtlib.MTSCRA;
 import com.magtek.mobile.android.mtlib.MTConnectionType;
 import com.magtek.mobile.android.mtlib.MTSCRAEvent;
@@ -45,83 +37,30 @@ import com.magtek.mobile.android.mtlib.MTConnectionState;
 import com.magtek.mobile.android.mtlib.MTCardDataState;
 import com.magtek.mobile.android.mtlib.MTDeviceConstants;
 import com.magtek.mobile.android.mtlib.IMTCardData;
-import com.magtek.mobile.android.mtlib.MTServiceState;
-import com.magtek.mobile.android.mtlib.config.MTSCRAConfig;
-import com.magtek.mobile.android.mtlib.config.ProcessMessageResponse;
-import com.magtek.mobile.android.mtlib.config.SCRAConfigurationDeviceInfo;
 
-public class MagTekDemo extends Activity
-{
+public class MagTekDemo extends Activity {
     private final static String TAG = MagTekDemo.class.getSimpleName();
 
-    public static final String AUDIO_CONFIG_FILE = "MTSCRAAudioConfig.cfg";
-
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_AUDIO = "Audio";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_BLE = "BLE";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_BLE_EMV = "BLEEMV";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_BLE_EMVT = "BLEEMVT";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_BLUETOOTH = "Bluetooth";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_USB = "USB";
-    public static final String EXTRAS_CONNECTION_TYPE_VALUE_SERIAL = "Serial";
-
-    public static final String EXTRAS_CONNECTION_TYPE = "CONNECTION_TYPE";
-    public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
-    public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
-    public static final String EXTRAS_AUDIO_CONFIG_TYPE = "AUDIO_CONFIG_TYPE";
-
-    public static final String CONFIGWS_URL = "https://deviceconfig.magensa.net/service.asmx";//Production URL
-    private static final String CONFIGWS_USERNAME = "magtek";
-    private static final String CONFIGWS_PASSWORD = "p@ssword";
-    private static final int CONFIGWS_READERTYPE = 0;
-    private static final int CONFIGWS_TIMEOUT = 10000;
-
-    private static String SCRA_CONFIG_VERSION = "102.02";
-
     private Menu mMainMenu;
-
     private TextView mMessageTextView;
     private TextView mMessageTextView2;
-
-    private TextView mAddressField;
     private TextView mConnectionStateField;
-
     private EditText mDataFields;
-
-    private AlertDialog mSelectionDialog;
-    private Handler mSelectionDialogController;
-
     private AudioManager m_audioManager;
-
     private int m_audioVolume;
-
     private boolean m_startTransactionActionPending;
-
     private boolean m_turnOffLEDPending;
-
     private int m_emvMessageFormat = 0;
-
     private boolean m_emvMessageFormatRequestPending = false;
-
     private MTSCRA m_scra;
-
     private MTConnectionType m_connectionType;
-    private String m_deviceName;
-    private String m_deviceAddress;
-    private String m_audioConfigType;
-
     private Object m_syncEvent = null;
     private String m_syncData = "";
-
     private MTConnectionState m_connectionState = MTConnectionState.Disconnected;
-
     private final HeadSetBroadCastReceiver m_headsetReceiver = new HeadSetBroadCastReceiver();
-
     private final NoisyAudioStreamReceiver m_noisyAudioStreamReceiver = new NoisyAudioStreamReceiver();
-
-    private AlertDialog mTransactionDialog;
     private String[] mTypes = new String[] {"Swipe", "Chip", "Contactless"};
     private boolean[] mTypeChecked = new boolean[] {false, true, false};
-
     private Handler m_scraHandler = new Handler(new SCRAHandlerCallback());
 
     private class SCRAHandlerCallback implements Callback  {
@@ -216,8 +155,7 @@ public class MagTekDemo extends Activity
         }
     }
 
-    protected void OnCardDataStateChanged(MTCardDataState cardDataState)
-    {
+    protected void OnCardDataStateChanged(MTCardDataState cardDataState) {
         switch (cardDataState)
         {
             case DataNotReady:
@@ -233,9 +171,7 @@ public class MagTekDemo extends Activity
 
     }
 
-    protected void OnCardDataReceived(IMTCardData cardData)
-    {
-        //clearDisplay();
+    protected void OnCardDataReceived(IMTCardData cardData) {
 
         sendToDisplay("[Raw Data]");
         sendToDisplay(m_scra.getResponseData());
@@ -259,8 +195,7 @@ public class MagTekDemo extends Activity
         }
     }
 
-    protected void OnDeviceResponse(String data)
-    {
+    protected void OnDeviceResponse(String data) {
         sendToDisplay("[Device Response]");
 
         sendToDisplay(data);
@@ -328,45 +263,10 @@ public class MagTekDemo extends Activity
         sendToDisplay(data);
     }
 
-    protected ArrayList<String> getSelectionList(byte[] data, int offset)
-    {
-        ArrayList<String> selectionList = new ArrayList<String>();
 
-        if (data != null)
-        {
-            int dataLen = data.length;
-
-            if (dataLen >= offset)
-            {
-                int start = offset;
-
-                for (int i = offset; i < dataLen; i++)
-                {
-                    if (data[i] == 0x00)
-                    {
-                        int len = i - start;
-
-                        if (len >= 0)
-                        {
-                            selectionList.add(new String(data, start, len));
-                        }
-
-                        start = i + 1;
-                    }
-                }
-            }
-        }
-
-        return selectionList;
-    }
-
-    protected void OnUserSelectionRequest(byte[] data)
-    {
+    protected void OnUserSelectionRequest(byte[] data) {
         sendToDisplay("[User Selection Request]");
-
         sendToDisplay(TLVParser.getHexString(data));
-
-        processSelectionRequest(data);
     }
 
     protected void showTransactionTypes()
@@ -399,101 +299,16 @@ public class MagTekDemo extends Activity
         dialogBuilder.setMultiChoiceItems(mTypes, mTypeChecked, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int which, boolean isChecked) {
-                try
-                {
+                try {
                     mTypeChecked[which] = isChecked;
                 }
-                catch (Exception ex)
-                {
-
+                catch (Exception ex) {
                 }
             }
         });
 
-        mTransactionDialog = dialogBuilder.show();
     }
 
-    protected void processSelectionRequest(byte[] data)
-    {
-        if (data != null)
-        {
-            int dataLen = data.length;
-
-            if (dataLen > 2)
-            {
-                byte selectionType = data[0];
-                long timeout = ((long) (data[1] & 0xFF) * 1000);
-
-                ArrayList<String> selectionList = getSelectionList(data, 2);
-
-                String selectionTitle = selectionList.get(0);
-
-                selectionList.remove(0);
-
-                int nSelections = selectionList.size();
-
-                if (nSelections > 0)
-                {
-                    if (selectionType == MTEMVDeviceConstants.SELECTION_TYPE_LANGUAGE)
-                    {
-                        for (int i = 0; i < nSelections; i++)
-                        {
-                            byte[] code = selectionList.get(i).getBytes();
-                            EMVLanguage language = EMVLanguage.GetLanguage(code);
-
-                            if (language != null)
-                            {
-                                selectionList.set(i, language.getName());
-                            }
-                        }
-                    }
-
-                    String[] selectionArray = selectionList.toArray(new String[selectionList.size()]);
-
-                    mSelectionDialogController = new Handler();
-
-                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-                    dialogBuilder.setTitle(selectionTitle);
-
-                    dialogBuilder.setNegativeButton(R.string.value_cancel,
-                            new DialogInterface.OnClickListener()
-                            {
-                                @Override
-                                public void onClick(DialogInterface dialog, int id)
-                                {
-                                    mSelectionDialogController.removeCallbacksAndMessages(null);
-                                    mSelectionDialogController = null;
-                                    dialog.dismiss();
-                                    setUserSelectionResult(MTEMVDeviceConstants.SELECTION_STATUS_CANCELLED, (byte) 0);
-                                }
-                            });
-
-                    dialogBuilder.setItems(selectionArray,
-                            new DialogInterface.OnClickListener()
-                            {
-                                public void onClick(DialogInterface dialog, int which)
-                                {
-                                    mSelectionDialogController.removeCallbacksAndMessages(null);
-                                    mSelectionDialogController = null;
-                                    setUserSelectionResult(MTEMVDeviceConstants.SELECTION_STATUS_COMPLETED, (byte) (which));
-                                }
-                            });
-
-                    mSelectionDialog = dialogBuilder.show();
-
-                    mSelectionDialogController.postDelayed(new Runnable()
-                    {
-                        @Override
-                        public void run()
-                        {
-                            mSelectionDialog.dismiss();
-                            setUserSelectionResult(MTEMVDeviceConstants.SELECTION_STATUS_TIMED_OUT, (byte) 0);
-                        }
-                    }, timeout);
-                }
-            }
-        }
-    }
 
     protected boolean isQuickChipEnabled()
     {
@@ -745,24 +560,17 @@ public class MagTekDemo extends Activity
     {
         if (parsedTLVList != null)
         {
-            ListIterator<HashMap<String, String>> it = parsedTLVList.listIterator();
 
-            while (it.hasNext())
-            {
-                HashMap<String, String> map = it.next();
-
+            for (HashMap<String, String> map : parsedTLVList) {
                 String tagString = map.get("tag");
-                //String lenString = map.get("len");
                 String valueString = map.get("value");
-
-                sendToDisplay("  "+ tagString + "=" + valueString);
+                sendToDisplay("  " + tagString + "=" + valueString);
             }
         }
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig)
-    {
+    public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
     }
 
@@ -771,57 +579,11 @@ public class MagTekDemo extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        final Intent intent = getIntent();
-
-        String connectionType = intent.getStringExtra(EXTRAS_CONNECTION_TYPE);
-
         m_connectionType = MTConnectionType.Audio;
-
-        if (connectionType != null)
-        {
-            if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_AUDIO))
-            {
-                m_connectionType = MTConnectionType.Audio;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_BLE))
-            {
-                m_connectionType = MTConnectionType.BLE;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_BLE_EMV))
-            {
-                m_connectionType = MTConnectionType.BLEEMV;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_BLE_EMVT))
-            {
-                m_connectionType = MTConnectionType.BLEEMVT;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_BLUETOOTH))
-            {
-                m_connectionType = MTConnectionType.Bluetooth;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_USB))
-            {
-                m_connectionType = MTConnectionType.USB;
-            }
-            else if (connectionType.equalsIgnoreCase(EXTRAS_CONNECTION_TYPE_VALUE_SERIAL))
-            {
-                m_connectionType = MTConnectionType.Serial;
-            }
-        }
-
-        m_deviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
-        m_deviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
-        m_audioConfigType = intent.getStringExtra(EXTRAS_AUDIO_CONFIG_TYPE);
-
-        // Sets up UI references.
-        mMessageTextView = ((TextView) findViewById(R.id.messageTextView));
-        mMessageTextView2 = ((TextView) findViewById(R.id.messageTextView2));
-        mAddressField = ((TextView) findViewById(R.id.device_address));
-        mConnectionStateField = (TextView) findViewById(R.id.connection_state);
-        mDataFields = (EditText) findViewById(R.id.data_values);
-
-        mAddressField.setText(m_deviceAddress + " [ " + connectionType + " ]");
+        mMessageTextView = findViewById(R.id.messageTextView);
+        mMessageTextView2 = findViewById(R.id.messageTextView2);
+        mConnectionStateField = findViewById(R.id.connection_state);
+        mDataFields = findViewById(R.id.data_values);
 
         try
         {
@@ -835,7 +597,6 @@ public class MagTekDemo extends Activity
             getActionBar().setTitle(R.string.app_name);
         }
 
-        getActionBar().setSubtitle(m_deviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         m_audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
@@ -912,14 +673,7 @@ public class MagTekDemo extends Activity
         {
             menu.findItem(R.id.menu_connect).setVisible(false);
             menu.findItem(R.id.menu_disconnect).setVisible(true);
-            //menu.findItem(R.id.menu_clear_display).setVisible(true);
             menu.findItem(R.id.menu_options).setVisible(false);
-/*
-            if (m_connectionType == MTConnectionType.Bluetooth)
-                menu.findItem(R.id.menu_send).setVisible(false);
-            else
-                menu.findItem(R.id.menu_send).setVisible(true);
-*/
             menu.findItem(R.id.menu_commands).setVisible(true);
 
             if (m_scra.isDeviceEMV())
@@ -939,8 +693,6 @@ public class MagTekDemo extends Activity
         {
             menu.findItem(R.id.menu_connect).setVisible(false);
             menu.findItem(R.id.menu_disconnect).setVisible(true);
-            //menu.findItem(R.id.menu_clear_display).setVisible(false);
-            //menu.findItem(R.id.menu_send).setVisible(false);
             menu.findItem(R.id.menu_commands).setVisible(false);
             menu.findItem(R.id.menu_emv).setVisible(false);
             menu.findItem(R.id.menu_options).setVisible(false);
@@ -949,8 +701,6 @@ public class MagTekDemo extends Activity
         {
             menu.findItem(R.id.menu_connect).setVisible(false);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
-            //menu.findItem(R.id.menu_clear_display).setVisible(false);
-            //menu.findItem(R.id.menu_send).setVisible(false);
             menu.findItem(R.id.menu_commands).setVisible(false);
             menu.findItem(R.id.menu_emv).setVisible(false);
             menu.findItem(R.id.menu_options).setVisible(false);
@@ -959,8 +709,6 @@ public class MagTekDemo extends Activity
         {
             menu.findItem(R.id.menu_connect).setVisible(true);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
-            //menu.findItem(R.id.menu_clear_display).setVisible(false);
-            //menu.findItem(R.id.menu_send).setVisible(false);
             menu.findItem(R.id.menu_commands).setVisible(false);
             menu.findItem(R.id.menu_emv).setVisible(false);
 
@@ -989,10 +737,7 @@ public class MagTekDemo extends Activity
         int year = now.get(Calendar.YEAR) - 2008;
 
         String dateTimeString = String.format("%1$02x%2$02x%3$02x%4$02x%5$02x00%6$02x", month, day, hour, minute, second, year);
-
-        //String command = new String("491E0000030C00180000000000000000000000000000000000") + dateTimeString;
-        String command = new String("49220000030C001C0000000000000000000000000000000000") + dateTimeString + "00000000";
-
+        String command = "49220000030C001C0000000000000000000000000000000000" + dateTimeString + "00000000";
         sendCommand(command);
     }
 
@@ -1062,9 +807,7 @@ public class MagTekDemo extends Activity
             if (features != null)
             {
                 StringBuilder infoSB = new StringBuilder();
-
                 infoSB.append("[Device Features]\n");
-
                 infoSB.append("Supported Types: " + (features.MSR ? "(MSR) ":"") + (features.Contact ? "(Contact) ":"") + (features.Contactless ? "(Contactless) ":"") + "\n");
                 infoSB.append("MSR Power Saver: " + (features.MSRPowerSaver ? "Yes":"No") + "\n");
                 infoSB.append("Battery Backed Clock: " + (features.BatteryBackedClock ? "Yes":"No"));
@@ -1147,8 +890,6 @@ public class MagTekDemo extends Activity
         final View panTextEntryView = panFactory.inflate(R.layout.custom_command, null);
 
         Builder dialog = new AlertDialog.Builder(this);
-
-//	    dialog.setIconAttribute(android.R.attr.alertDialogIcon);
         dialog.setTitle(R.string.menu_send);
         dialog.setView(panTextEntryView);
 
@@ -1213,34 +954,6 @@ public class MagTekDemo extends Activity
         }
 
         return result;
-    }
-
-    public void sendGetSwipeOutput()
-    {
-        String command = "4800";
-
-        sendCommand(command);
-    }
-
-    public void sendSetSwipeToBLE()
-    {
-        String command = "480101";
-
-        sendCommand(command);
-    }
-
-    public void sendSetSwipeToUSB()
-    {
-        String command = "480100";
-
-        sendCommand(command);
-    }
-
-    public void sendResetDevice()
-    {
-        String command = "0200";
-
-        sendCommand(command);
     }
 
     public void startTransactionWithLED()
@@ -1443,151 +1156,6 @@ public class MagTekDemo extends Activity
         return config;
     }
 
-    private void startAudioConfigFromFile()
-    {
-        try
-        {
-            new LoadAudioConfigFromFileTask().execute("");
-        }
-        catch (Exception ex)
-        {
-            Log.i(TAG, "*** Exception");
-        }
-    }
-
-    private void startAudioConfigFromServer()
-    {
-        try
-        {
-            new LoadAudioConfigFromServerTask().execute("");
-        }
-        catch (Exception ex)
-        {
-            Log.i(TAG, "*** Exception");
-        }
-    }
-
-    private void onAudioConfigReceived(String xmlConfig)
-    {
-        try
-        {
-            if (m_scra !=null)
-            {
-                String config = "";
-
-                try
-                {
-                    if ((xmlConfig != null) && !xmlConfig.isEmpty())
-                    {
-                        String model = android.os.Build.MODEL.toUpperCase();
-
-                        Log.i(TAG, "*** Model=" + model);
-
-                        MTSCRAConfig scraConfig = new MTSCRAConfig(SCRA_CONFIG_VERSION);
-
-                        ProcessMessageResponse configurationResponse =scraConfig.getConfigurationResponse(xmlConfig);
-
-                        Log.i(TAG, "*** ProcessMessageResponse Count =" + configurationResponse.getPropertyCount());
-
-                        config = scraConfig.getConfigurationParams(model, configurationResponse);
-                    }
-
-                    Log.i(TAG, "*** Config=" + config);
-
-                    m_scra.setDeviceConfiguration(config);
-                }
-                catch (Exception ex)
-                {
-                    Log.i(TAG, "*** Exception " + ex.getMessage());
-                }
-
-                m_scra.openDevice();
-            }
-        }
-        catch (Exception ex)
-        {
-            Log.i(TAG, "*** Exception");
-        }
-    }
-
-    private class LoadAudioConfigFromFileTask extends AsyncTask<String, Void, String>
-    {
-        protected String doInBackground(String... params)
-        {
-            String xmlConfig = "";
-
-            try
-            {
-                xmlConfig = getAudioConfigFromFile();
-            }
-            catch (Exception ex)
-            {
-                Log.i(TAG, "*** Exception");
-            }
-
-            Log.i(TAG, "*** XML Config=" + xmlConfig);
-
-            return xmlConfig;
-        }
-
-        @Override
-        protected void onPostExecute(String result)
-        {
-            onAudioConfigReceived(result);
-        }
-
-        @Override
-        protected void onPreExecute() {}
-
-        @Override
-        protected void onProgressUpdate(Void... values) {}
-    }
-
-    private class LoadAudioConfigFromServerTask extends AsyncTask<String, Void, String>
-    {
-        protected String doInBackground(String... params)
-        {
-            String xmlConfig = "";
-
-            try
-            {
-                String model = android.os.Build.MODEL.toUpperCase();
-
-                Log.i(TAG, "*** Model=" + model);
-
-                MTSCRAConfig scraConfig = new MTSCRAConfig(SCRA_CONFIG_VERSION);
-
-                SCRAConfigurationDeviceInfo deviceInfo = new SCRAConfigurationDeviceInfo();
-                deviceInfo.setProperty(SCRAConfigurationDeviceInfo.PROP_PLATFORM, "Android");
-                deviceInfo.setProperty(SCRAConfigurationDeviceInfo.PROP_MODEL, model);
-
-                xmlConfig = scraConfig.getConfigurationXML(CONFIGWS_USERNAME, CONFIGWS_PASSWORD, CONFIGWS_READERTYPE, deviceInfo, CONFIGWS_URL, CONFIGWS_TIMEOUT);
-
-
-                saveAudioConfigToFile(xmlConfig);
-            }
-            catch (Exception ex)
-            {
-                Log.i(TAG, "*** Exception");
-            }
-
-            Log.i(TAG, "*** XML Config=" + xmlConfig);
-
-            return xmlConfig;
-        }
-
-        @Override
-        protected void onPostExecute(String result)
-        {
-            onAudioConfigReceived(result);
-        }
-
-        @Override
-        protected void onPreExecute() {}
-
-        @Override
-        protected void onProgressUpdate(Void... values) {}
-    }
 
     public long closeDevice()
     {
@@ -1610,54 +1178,18 @@ public class MagTekDemo extends Activity
         Log.i(TAG, "SCRADevice openDevice");
 
         long result = -1;
-/*
-        if (m_connectionType == MTConnectionType.BLEEMV)
-        {
-            if(m_connectionState!=MTConnectionState.Disconnected)
-            {
-                Log.i(TAG, "SCRADevice openDevice:Device Not Disconnected");
-                return 0;
-            }
-        }
-*/
         if (m_scra != null)
         {
             m_scra.setConnectionType(m_connectionType);
-            m_scra.setAddress(m_deviceAddress);
+            m_scra.setAddress("");
 
             boolean enableRetry = false;
 
-            if (mMainMenu != null)
-            {
+            if (mMainMenu != null) {
                 enableRetry = mMainMenu.findItem(R.id.menu_connection_retry).isChecked();
             }
 
             m_scra.setConnectionRetry(enableRetry);
-
-            if (m_connectionType == MTConnectionType.Audio)
-            {
-                if (m_audioConfigType.equalsIgnoreCase("1"))
-                {
-                    // Manual Configuration
-                    Log.i(TAG, "*** Manual Audio Config");
-                    m_scra.setDeviceConfiguration(getManualAudioConfig());
-                }
-                else if (m_audioConfigType.equalsIgnoreCase("2"))
-                {
-                    // Configuration File
-                    Log.i(TAG, "*** Audio Config From File");
-                    startAudioConfigFromFile();
-                    return 0;
-                }
-                else if (m_audioConfigType.equalsIgnoreCase("3"))
-                {
-                    // Configuration From Server
-                    Log.i(TAG, "*** Audio Config From Server");
-                    startAudioConfigFromServer();
-                    return 0;
-                }
-            }
-
             m_scra.openDevice();
 
             result = 0;
@@ -1666,19 +1198,12 @@ public class MagTekDemo extends Activity
         return result;
     }
 
-    public boolean isDeviceOpened() {
-        Log.i(TAG, "SCRADevice isDeviceOpened");
-
-        return (m_connectionState == MTConnectionState.Connected);
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch(item.getItemId())
         {
             case android.R.id.home:
-                //if (m_connectionState != MTConnectionState.Connecting)
             {
                 onBackPressed();
             }
@@ -1901,15 +1426,10 @@ public class MagTekDemo extends Activity
         }
     }
 
-    public String formatStringIfNotEmpty(String format, String data)
-    {
+    public String formatStringIfNotEmpty(String format, String data) {
         String result = "";
-
         if (!data.isEmpty())
-        {
             result = String.format(format, data);
-        }
-
         return result;
     }
 
@@ -1944,10 +1464,6 @@ public class MagTekDemo extends Activity
         stringBuilder.append(String.format("Device.Serial=%s \n", m_scra.getDeviceSerial()));
         stringBuilder.append(String.format("Session.ID=%s \n", m_scra.getSessionID()));
         stringBuilder.append(String.format("KSN=%s \n", m_scra.getKSN()));
-
-        //stringBuilder.append(formatStringIfNotEmpty("Device.Name=%s \n", m_scra.getDeviceName()));
-        //stringBuilder.append(String.format("Swipe.Count=%d \n", m_scra.getSwipeCount()));
-
         stringBuilder.append(formatStringIfNotEmpty("Cap.MagnePrint=%s \n", m_scra.getCapMagnePrint()));
         stringBuilder.append(formatStringIfNotEmpty("Cap.MagnePrintEncryption=%s \n", m_scra.getCapMagnePrintEncryption()));
         stringBuilder.append(formatStringIfNotEmpty("Cap.MagneSafe20Encryption=%s \n", m_scra.getCapMagneSafe20Encryption()));
@@ -1964,16 +1480,10 @@ public class MagTekDemo extends Activity
         stringBuilder.append(String.format("Card.PAN.Length=%d \n", m_scra.getCardPANLength()));
         stringBuilder.append(String.format("Card.Service.Code=%s \n", m_scra.getCardServiceCode()));
         stringBuilder.append(String.format("Card.Status=%s \n", m_scra.getCardStatus()));
-
         stringBuilder.append(formatStringIfNotEmpty("HashCode=%s \n", m_scra.getHashCode()));
         stringBuilder.append(formatStringIfNotValueZero("Data.Field.Count=%s \n", m_scra.getDataFieldCount()));
-
         stringBuilder.append(String.format("Encryption.Status=%s \n", m_scra.getEncryptionStatus()));
-
-        //stringBuilder.append(formatStringIfNotEmpty("Firmware=%s \n", m_scra.getFirmware()));
-
         stringBuilder.append(formatStringIfNotEmpty("MagTek.Device.Serial=%s \n", m_scra.getMagTekDeviceSerial()));
-
         stringBuilder.append(formatStringIfNotEmpty("Response.Type=%s \n", m_scra.getResponseType()));
         stringBuilder.append(formatStringIfNotEmpty("TLV.Version=%s \n", m_scra.getTLVVersion()));
 
@@ -2006,11 +1516,7 @@ public class MagTekDemo extends Activity
     public class NoisyAudioStreamReceiver extends BroadcastReceiver
     {
         @Override
-        public void onReceive(Context context, Intent intent)
-        {
-            /* If the device is unplugged, this will immediately detect that action,
-             * and close the device.
-             */
+        public void onReceive(Context context, Intent intent) {
             if(AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction()))
             {
                 if (m_connectionType == MTConnectionType.Audio)
@@ -2065,61 +1571,6 @@ public class MagTekDemo extends Activity
         }
     }
 
-    public String getAudioConfigFromFile()
-    {
-        String config = "";
 
-        try
-        {
-            config = ReadSettings(getApplicationContext(), AUDIO_CONFIG_FILE);
 
-            if (config==null)
-            {
-                config = "";
-            }
-        }
-        catch (Exception ex)
-        {
-        }
-
-        return config;
-    }
-
-    public void saveAudioConfigToFile(String xmlConfig)
-    {
-        try
-        {
-            WriteSettings(getApplicationContext(), xmlConfig, AUDIO_CONFIG_FILE);
-        }
-        catch (Exception ex)
-        {
-
-        }
-    }
-
-    public static String ReadSettings(Context context, String file) throws IOException
-    {
-        FileInputStream fis = null;
-        InputStreamReader isr = null;
-        String data = null;
-        fis = context.openFileInput(file);
-        isr = new InputStreamReader(fis);
-        char[] inputBuffer = new char[fis.available()];
-        isr.read(inputBuffer);
-        data = new String(inputBuffer);
-        isr.close();
-        fis.close();
-        return data;
-    }
-
-    public static void WriteSettings(Context context, String data, String file) throws IOException
-    {
-        FileOutputStream fos= null;
-        OutputStreamWriter osw = null;
-        fos= context.openFileOutput(file,Context.MODE_PRIVATE);
-        osw = new OutputStreamWriter(fos);
-        osw.write(data);
-        osw.close();
-        fos.close();
-    }
 }
