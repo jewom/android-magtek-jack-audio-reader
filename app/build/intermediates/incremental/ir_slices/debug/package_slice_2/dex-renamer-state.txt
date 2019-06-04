@@ -1,4 +1,4 @@
-#Tue Jun 04 17:03:19 CEST 2019
+#Tue Jun 04 17:35:14 CEST 2019
 base.0=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex

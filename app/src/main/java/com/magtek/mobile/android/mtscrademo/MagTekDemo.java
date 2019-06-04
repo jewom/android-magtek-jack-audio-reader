@@ -39,7 +39,7 @@ import com.magtek.mobile.android.mtlib.MTDeviceConstants;
 import com.magtek.mobile.android.mtlib.IMTCardData;
 
 public class MagTekDemo extends Activity {
-    private final static String TAG = MagTekDemo.class.getSimpleName();
+    private final static String TAG = "MagTekJewom";
 
     private Menu mMainMenu;
     private TextView mMessageTextView;
@@ -91,9 +91,6 @@ public class MagTekDemo extends Activity {
                         break;
                     case MTEMVEvent.OnUserSelectionRequest:
                         OnUserSelectionRequest((byte[]) msg.obj);
-                        break;
-                    case MTEMVEvent.OnARQCReceived:
-                        OnARQCReceived((byte[]) msg.obj);
                         break;
                     case MTEMVEvent.OnTransactionResult:
                         OnTransactionResult((byte[]) msg.obj);
@@ -172,7 +169,6 @@ public class MagTekDemo extends Activity {
     }
 
     protected void OnCardDataReceived(IMTCardData cardData) {
-
         sendToDisplay("[Raw Data]");
         sendToDisplay(m_scra.getResponseData());
 
@@ -183,8 +179,7 @@ public class MagTekDemo extends Activity {
         sendToDisplay(cardData.getTLVPayload());
     }
 
-    protected void notifySyncData(String data)
-    {
+    protected void notifySyncData(String data) {
         if (m_syncEvent != null)
         {
             synchronized(m_syncEvent)
@@ -197,13 +192,10 @@ public class MagTekDemo extends Activity {
 
     protected void OnDeviceResponse(String data) {
         sendToDisplay("[Device Response]");
-
         sendToDisplay(data);
-
         notifySyncData(data);
 
-        if (m_emvMessageFormatRequestPending)
-        {
+        if (m_emvMessageFormatRequestPending) {
             m_emvMessageFormatRequestPending = false;
 
             byte[] emvMessageFormatResponseByteArray = TLVParser.getByteArrayFromHexString(data);
@@ -236,30 +228,21 @@ public class MagTekDemo extends Activity {
         sendToDisplay("[Display Message Request]");
 
         String message = TLVParser.getTextString(data, 0);
-
         sendToDisplay(message);
-
         displayMessage(message);
     }
 
-    protected void OnEMVCommandResult(byte[] data)
-    {
+    protected void OnEMVCommandResult(byte[] data) {
         sendToDisplay("[EMV Command Result]");
-
         sendToDisplay(TLVParser.getHexString(data));
-
-        if (m_turnOffLEDPending)
-        {
+        if (m_turnOffLEDPending) {
             m_turnOffLEDPending = false;
-
             setLED(false);
         }
     }
 
-    protected void OnDeviceExtendedResponse(String data)
-    {
+    protected void OnDeviceExtendedResponse(String data) {
         sendToDisplay("[Device Extended Response]");
-
         sendToDisplay(data);
     }
 
@@ -273,7 +256,6 @@ public class MagTekDemo extends Activity {
     {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setTitle("Transaction Types");
-
         dialogBuilder.setNegativeButton(R.string.value_cancel,
                 new DialogInterface.OnClickListener()
                 {
@@ -310,198 +292,8 @@ public class MagTekDemo extends Activity {
     }
 
 
-    protected boolean isQuickChipEnabled()
-    {
-        boolean enabled = false;
-
-        if (mMainMenu != null)
-        {
-            enabled = mMainMenu.findItem(R.id.menu_emv_quickchip).isChecked();
-        }
-
-        return enabled;
-    }
-
-    protected boolean isTransactionApproved(byte[] data)
-    {
-        boolean approved = false;
-
-        if (mMainMenu != null)
-        {
-            approved = mMainMenu.findItem(R.id.menu_emv_approved).isChecked();
-        }
-
-        return approved;
-    }
-
-    protected void OnARQCReceived(byte[] data)
-    {
-        sendToDisplay("[ARQC Received]");
-
-        sendToDisplay(TLVParser.getHexString(data));
-
-        if (isQuickChipEnabled())
-        {
-            Log.i(TAG, "** Not sending ARQC response for Quick Chip");
-            return;
-        }
-
-        List<HashMap<String, String>> parsedTLVList = TLVParser.parseEMVData(data, true, "");
-
-        if (parsedTLVList != null)
-        {
-            String macKSNString = TLVParser.getTagValue(parsedTLVList, "DFDF54");
-            byte[] macKSN = TLVParser.getByteArrayFromHexString(macKSNString);
-
-            String macEncryptionTypeString = TLVParser.getTagValue(parsedTLVList, "DFDF55");
-            byte[] macEncryptionType = TLVParser.getByteArrayFromHexString(macEncryptionTypeString);
-
-            String deviceSNString = TLVParser.getTagValue(parsedTLVList, "DFDF25");
-            byte[] deviceSN = TLVParser.getByteArrayFromHexString(deviceSNString);
-
-            sendToDisplay("SN Bytes=" + deviceSNString);
-            sendToDisplay("SN String=" + TLVParser.getTextString(deviceSN, 2));
-
-            boolean approved = isTransactionApproved(data);
-
-            byte[] response = null;
-
-            if (m_emvMessageFormat == 0)
-            {
-                response = buildAcquirerResponseFormat0(deviceSN, approved);
-            }
-            else if (m_emvMessageFormat == 1)
-            {
-                response = buildAcquirerResponseFormat1(macKSN, macEncryptionType, deviceSN, approved);
-            }
-
-            setAcquirerResponse(response);
-        }
-    }
-
-    protected byte[] buildAcquirerResponseFormat0(byte[] deviceSN, boolean approved)
-    {
-        byte[] response = null;
-
-        int lenSN = 0;
-
-        if (deviceSN != null)
-            lenSN = deviceSN.length;
-
-        byte[] snTag = new byte[] { (byte) 0xDF, (byte) 0xDF, 0x25, (byte) lenSN };
-        byte[] container = new byte[] { (byte) 0xFA, 0x06, 0x70, 0x04 };
-        byte[] approvedARC = new byte[] { (byte) 0x8A, 0x02, 0x30, 0x30 };
-        byte[] declinedARC = new byte[] { (byte) 0x8A, 0x02, 0x30, 0x35 };
-
-        int len = 4 + snTag.length + lenSN + container.length + approvedARC.length;
-
-        response = new byte[len];
-
-        int i = 0;
-        len -= 2;
-        response[i++] = (byte)((len >> 8) & 0xFF);
-        response[i++] = (byte)(len & 0xFF);
-        len -= 2;
-        response[i++] = (byte) 0xF9;
-        response[i++] = (byte) len;
-        System.arraycopy(snTag, 0, response, i, snTag.length);
-        i += snTag.length;
-        System.arraycopy(deviceSN, 0, response, i, deviceSN.length);
-        i += deviceSN.length;
-        System.arraycopy(container, 0, response, i, container.length);
-        i += container.length;
-        if (approved)
-        {
-            System.arraycopy(approvedARC, 0, response, i, approvedARC.length);
-        }
-        else
-        {
-            System.arraycopy(declinedARC, 0, response, i, declinedARC.length);
-        }
-
-        return response;
-    }
-
-    protected byte[] buildAcquirerResponseFormat1(byte[] macKSN, byte[] macEncryptionType, byte[] deviceSN, boolean approved)
-    {
-        byte[] response = null;
-
-        int lenMACKSN = 0;
-        int lenMACEncryptionType = 0;
-        int lenSN = 0;
-
-        if (macKSN != null)
-        {
-            lenMACKSN = macKSN.length;
-        }
-
-        if (macEncryptionType != null)
-        {
-            lenMACEncryptionType = macEncryptionType.length;
-        }
-
-        if (deviceSN != null)
-        {
-            lenSN = deviceSN.length;
-        }
-
-        byte[] macKSNTag = new byte[] { (byte)0xDF, (byte)0xDF, 0x54, (byte)lenMACKSN };
-        byte[] macEncryptionTypeTag = new byte[] { (byte)0xDF, (byte)0xDF, 0x55, (byte)lenMACEncryptionType };
-        byte[] snTag = new byte[] { (byte)0xDF, (byte)0xDF, 0x25, (byte)lenSN };
-        byte[] container = new byte[] { (byte)0xFA, 0x06, 0x70, 0x04 };
-        byte[] approvedARC = new byte[] { (byte)0x8A, 0x02, 0x30, 0x30 };
-        byte[] declinedARC = new byte[] { (byte)0x8A, 0x02, 0x30, 0x35 };
-
-        int lenTLV = 4 + macKSNTag.length + lenMACKSN + macEncryptionTypeTag.length + lenMACEncryptionType + snTag.length + lenSN + container.length + approvedARC.length;
-
-        int lenPadding = 0;
-
-        if ((lenTLV % 8) > 0)
-        {
-            lenPadding = (8 - lenTLV % 8);
-        }
-
-        int lenData = lenTLV + lenPadding + 4;
-
-        response = new byte[lenData];
-
-        int i = 0;
-        response[i++] = (byte)(((lenData - 2) >> 8) & 0xFF);
-        response[i++] = (byte)((lenData - 2) & 0xFF);
-        response[i++] = (byte)0xF9;
-        response[i++] = (byte)(lenTLV - 4);
-        System.arraycopy(macKSNTag, 0, response, i, macKSNTag.length);
-        i += macKSNTag.length;
-        System.arraycopy(macKSN, 0, response, i, macKSN.length);
-        i += macKSN.length;
-        System.arraycopy(macEncryptionTypeTag, 0, response, i, macEncryptionTypeTag.length);
-        i += macEncryptionTypeTag.length;
-        System.arraycopy(macEncryptionType, 0, response, i, macEncryptionType.length);
-        i += macEncryptionType.length;
-        System.arraycopy(snTag, 0, response, i, snTag.length);
-        i += snTag.length;
-        System.arraycopy(deviceSN, 0, response, i, deviceSN.length);
-        i += deviceSN.length;
-        System.arraycopy(container, 0, response, i, container.length);
-        i += container.length;
-
-        if (approved)
-        {
-            System.arraycopy(approvedARC, 0, response, i, approvedARC.length);
-        }
-        else
-        {
-            System.arraycopy(declinedARC, 0, response, i, declinedARC.length);
-        }
-
-        return response;
-    }
-
-    protected void OnTransactionResult(byte[] data)
-    {
+    protected void OnTransactionResult(byte[] data) {
         sendToDisplay("[Transaction Result]");
-
-        //sendToDisplay(TLVParser.getHexString(data));
 
         if (data != null)
         {
@@ -538,16 +330,11 @@ public class MagTekDemo extends Activity {
                         }
                     }
 
-                    if (approved)
-                    {
+                    if (approved) {
                         if (signatureRequired)
-                        {
                             displayMessage2("( Signature Required )");
-                        }
                         else
-                        {
                             displayMessage2("( No Signature Required )");
-                        }
                     }
                 }
             }
@@ -654,76 +441,13 @@ public class MagTekDemo extends Activity {
         unregisterReceiver(m_headsetReceiver);
         unregisterReceiver(m_noisyAudioStreamReceiver);
 
-        //if (m_scra.isDeviceConnected())
-        {
+        if (m_scra.isDeviceConnected()) {
             m_scra.closeDevice();
         }
 
         super.onDestroy();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        getMenuInflater().inflate(R.menu.main, menu);
-
-        mMainMenu = menu;
-
-        if (m_connectionState == MTConnectionState.Connected)
-        {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(true);
-            menu.findItem(R.id.menu_options).setVisible(false);
-            menu.findItem(R.id.menu_commands).setVisible(true);
-
-            if (m_scra.isDeviceEMV())
-            {
-                sendToDisplay("This device supports EMV.");
-                menu.findItem(R.id.menu_emv).setVisible(true);
-
-                requestEMVMessageFormat();
-            }
-            else
-            {
-                menu.findItem(R.id.menu_emv).setVisible(false);
-            }
-            sendToDisplay("Power Management Value: " + m_scra.getPowerManagementValue());
-        }
-        else if (m_connectionState == MTConnectionState.Connecting)
-        {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(true);
-            menu.findItem(R.id.menu_commands).setVisible(false);
-            menu.findItem(R.id.menu_emv).setVisible(false);
-            menu.findItem(R.id.menu_options).setVisible(false);
-        }
-        else if (m_connectionState == MTConnectionState.Disconnecting)
-        {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(false);
-            menu.findItem(R.id.menu_commands).setVisible(false);
-            menu.findItem(R.id.menu_emv).setVisible(false);
-            menu.findItem(R.id.menu_options).setVisible(false);
-        }
-        else if (m_connectionState == MTConnectionState.Disconnected)
-        {
-            menu.findItem(R.id.menu_connect).setVisible(true);
-            menu.findItem(R.id.menu_disconnect).setVisible(false);
-            menu.findItem(R.id.menu_commands).setVisible(false);
-            menu.findItem(R.id.menu_emv).setVisible(false);
-
-            if ((m_connectionType == MTConnectionType.BLEEMV) || (m_connectionType == MTConnectionType.BLE))
-            {
-                menu.findItem(R.id.menu_options).setVisible(true);
-            }
-            else
-            {
-                menu.findItem(R.id.menu_options).setVisible(false);
-            }
-        }
-
-        return true;
-    }
 
     private void sendSetDateTimeCommand()
     {
@@ -883,35 +607,6 @@ public class MagTekDemo extends Activity {
         }, 1000);
     }
 
-    private void sendCustomCommand()
-    {
-        LayoutInflater panFactory = LayoutInflater.from(this);
-
-        final View panTextEntryView = panFactory.inflate(R.layout.custom_command, null);
-
-        Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle(R.string.menu_send);
-        dialog.setView(panTextEntryView);
-
-        dialog.setPositiveButton(R.string.menu_send, new DialogInterface.OnClickListener()
-        {
-            public void onClick(DialogInterface dialog, int whichButton)
-            {
-                EditText textEntry = (EditText) panTextEntryView.findViewById(R.id.custom_command_edittext);
-                String command = textEntry.getText().toString();
-                sendCommand(command);
-            }
-        });
-
-        dialog.setNegativeButton(R.string.value_cancel, new DialogInterface.OnClickListener()
-        {
-            public void onClick(DialogInterface dialog, int whichButton)
-            {
-            }
-        });
-
-        dialog.show();
-    }
 
     public String sendCommandSync(String command)
     {
@@ -981,331 +676,63 @@ public class MagTekDemo extends Activity {
             type |= (byte) 0x04;
         }
 
-        startTransactionWithOptions(type);
     }
 
-    public void startTransactionWithOptions(byte cardType)
-    {
-        if (m_scra != null)
-        {
-//            byte timeLimit = 0x3C;
-            byte timeLimit = 0x09;
-            //byte cardType = 0x02;  // Chip Only
-            //byte cardType = 0x03;  // MSR + Chip
-            byte option = (isQuickChipEnabled() ? (byte) 0x80:00);
-            byte[] amount = new byte[] {0x00, 0x00, 0x00, 0x00, 0x15, 0x00};
-            byte transactionType = 0x00; // Purchase
-            byte[] cashBack = new byte[] {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-            byte[] currencyCode = new byte[] { 0x08, 0x40};
-            byte reportingOption = 0x02;  // All Status Changes
 
-            clearMessage();
-            clearMessage2();
-
-            int result = m_scra.startTransaction(timeLimit, cardType, option, amount, transactionType, cashBack, currencyCode, reportingOption);
-
-            sendToDisplay("[Start Transaction] (Result=" + result + ")");
-        }
-    }
-
-    public void setUserSelectionResult(byte status, byte selection)
-    {
-        if (m_scra != null)
-        {
-            sendToDisplay("[Sending Selection Result] Status=" + status + " Selection=" + selection);
-
-            m_scra.setUserSelectionResult(status, selection);
-        }
-    }
-
-    public void setAcquirerResponse(byte[] response)
-    {
-        if ((m_scra != null) && (response != null))
-        {
-            sendToDisplay("[Sending Acquirer Response]\n" + TLVParser.getHexString(response));
-
-            m_scra.setAcquirerResponse(response);
-        }
-    }
-
-    public void cancelTransaction()
-    {
-        if (m_scra != null)
-        {
-            m_turnOffLEDPending = true;
-
-            int result = m_scra.cancelTransaction();
-
-            sendToDisplay("[Cancel Transaction] (Result=" + result + ")");
-        }
-    }
-
-    public void setLED(boolean on)
-    {
-        if (m_scra != null)
-        {
+    public void setLED(boolean on) {
+        if (m_scra != null) {
             if (on)
-            {
                 m_scra.sendCommandToDevice(MTDeviceConstants.SCRA_DEVICE_COMMAND_STRING_SET_LED_ON);
-            }
             else
-            {
                 m_scra.sendCommandToDevice(MTDeviceConstants.SCRA_DEVICE_COMMAND_STRING_SET_LED_OFF);
-            }
-        }
-    }
-
-    public void getTerminalConfiguration()
-    {
-        if (m_scra != null)
-        {
-            String commandString 	= "0306";
-            String sizeString 		= "0003";
-            String dataString 		= "010F00";
-
-            sendToDisplay("[Get Terminal Configuration]");
-
-            m_scra.sendExtendedCommand(commandString + sizeString + dataString);
-        }
-    }
-
-    public void setTerminalConfiguration()
-    {
-        if (m_scra != null)
-        {
-            String commandString 	= "0305";
-            String sizeString 		= "001D";
-            String dataString 		= "0001010042333039343633303932323135414100FA00000000B75CD164";
-
-            sendToDisplay("[Set Terminal Configuration]");
-
-            m_scra.sendExtendedCommand(commandString + sizeString + dataString);
-        }
-    }
-
-    public void commitConfiguration()
-    {
-        if (m_scra != null)
-        {
-            String commandString 	= "030E";
-            String sizeString 		= "0001";
-            String dataString 		= "00";
-
-            sendToDisplay("[Commit Configuration]");
-
-            m_scra.sendExtendedCommand(commandString + sizeString + dataString);
         }
     }
 
 
-    private String getManualAudioConfig()
-    {
-        String config = "";
 
-        try
-        {
-            String model = android.os.Build.MODEL.toUpperCase();
-
-            if(model.contains("DROID RAZR") || model.toUpperCase().contains("XT910"))
-            {
-                config = "INPUT_SAMPLE_RATE_IN_HZ=48000,";
-            }
-            else if ((model.equals("DROID PRO"))||
-                    (model.equals("MB508"))||
-                    (model.equals("DROIDX"))||
-                    (model.equals("DROID2"))||
-                    (model.equals("MB525")))
-            {
-                config = "INPUT_SAMPLE_RATE_IN_HZ=32000,";
-            }
-            else if ((model.equals("GT-I9300"))||//S3 GSM Unlocked
-                    (model.equals("SPH-L710"))||//S3 Sprint
-                    (model.equals("SGH-T999"))||//S3 T-Mobile
-                    (model.equals("SCH-I535"))||//S3 Verizon
-                    (model.equals("SCH-R530"))||//S3 US Cellular
-                    (model.equals("SAMSUNG-SGH-I747"))||// S3 AT&T
-                    (model.equals("M532"))||//Fujitsu
-                    (model.equals("GT-N7100"))||//Notes 2
-                    (model.equals("GT-N7105"))||//Notes 2
-                    (model.equals("SAMSUNG-SGH-I317"))||// Notes 2
-                    (model.equals("SCH-I605"))||// Notes 2
-                    (model.equals("SCH-R950"))||// Notes 2
-                    (model.equals("SGH-T889"))||// Notes 2
-                    (model.equals("SPH-L900"))||// Notes 2
-                    (model.equals("GT-P3113")))//Galaxy Tab 2, 7.0
-
-            {
-                config = "INPUT_AUDIO_SOURCE=VRECOG,";
-            }
-            else if ((model.equals("XT907")))
-            {
-                config = "INPUT_WAVE_FORM=0,";
-            }
-            else
-            {
-                config = "INPUT_AUDIO_SOURCE=VRECOG,";
-                //config += "PAN_MOD10_CHECKDIGIT=FALSE";
-            }
-
-        }
-        catch (Exception ex)
-        {
-
-        }
-
-        return config;
-    }
-
-
-    public long closeDevice()
-    {
+    public long closeDevice() {
         Log.i(TAG, "SCRADevice closeDevice");
-
         long result = -1;
-
-        if (m_scra != null)
-        {
+        if (m_scra != null) {
             m_scra.closeDevice();
-
             result = 0;
         }
-
         return result;
     }
 
-    public long openDevice()
-    {
+    public long openDevice() {
         Log.i(TAG, "SCRADevice openDevice");
-
         long result = -1;
-        if (m_scra != null)
-        {
+        if (m_scra != null) {
             m_scra.setConnectionType(m_connectionType);
             m_scra.setAddress("");
-
             boolean enableRetry = false;
-
-            if (mMainMenu != null) {
-                enableRetry = mMainMenu.findItem(R.id.menu_connection_retry).isChecked();
-            }
-
             m_scra.setConnectionRetry(enableRetry);
             m_scra.openDevice();
-
             result = 0;
         }
-
         return result;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch(item.getItemId())
-        {
-            case android.R.id.home:
-            {
-                onBackPressed();
-            }
-            return true;
-            case R.id.menu_connect:
-                if (openDevice() != 0)
-                {
-                    sendToDisplay("[Failed to connect to the device]");
-                }
-                return true;
-            case R.id.menu_disconnect:
-                closeDevice();
-                return true;
-            case R.id.menu_clear_display:
-                clearDisplay();
-                return true;
-            case R.id.menu_send:
-                sendCustomCommand();
-                return true;
-            case R.id.menu_start_transaction:
-                //startTransactionWithLED();
-                showTransactionTypes();
-                return true;
-            case R.id.menu_cancel_transaction:
-                cancelTransaction();
-                return true;
-            case R.id.menu_emv_set_time:
-                sendSetDateTimeCommand();
-                return true;
-            case R.id.menu_get_device_info:
-                getDeviceInfo();
-                return true;
-            case R.id.menu_get_battery_level:
-                getBatteryLevel();
-                return true;
-            case R.id.menu_get_ksn:
-                getKSN();
-                return true;
-            case R.id.menu_clear_buffers:
-                clearBuffers();
-                return true;
-            case R.id.menu_set_msr_on:
-                setMSRPower(true);
-                return true;
-            case R.id.menu_set_msr_off:
-                setMSRPower(false);
-                return true;
-            case R.id.menu_emv_approved:
-                item.setChecked(!item.isChecked());
-                return true;
-            case R.id.menu_emv_quickchip:
-                boolean enableQuickChip = !item.isChecked();
-                item.setChecked(enableQuickChip);
-                if (mMainMenu != null)
-                {
-                    mMainMenu.findItem(R.id.menu_emv_approved).setEnabled(!enableQuickChip);
-                }
-                return true;
-            case R.id.menu_connection_retry:
-                boolean enableRetry =  !item.isChecked();
-                item.setChecked(enableRetry);
-                return true;
-            case R.id.menu_emv_get_terminal_config:
-                getTerminalConfiguration();
-                return true;
-            case R.id.menu_emv_set_terminal_config:
-                setTerminalConfiguration();
-                return true;
-            case R.id.menu_emv_commit_config:
-                commitConfiguration();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void setVolume(int volume)
-    {
+    private void setVolume(int volume) {
         m_audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volume, AudioManager.FLAG_SHOW_UI);
     }
 
-    private void saveVolume()
-    {
+    private void saveVolume() {
         m_audioVolume = m_audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
     }
 
-    private void restoreVolume()
-    {
+    private void restoreVolume() {
         setVolume(m_audioVolume);
     }
 
-    private void setVolumeToMax()
-    {
+    private void setVolumeToMax() {
         saveVolume();
-
         int volume = m_audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-
         setVolume(volume);
     }
 
-    private void updateConnectionState(final int resourceId)
-    {
+    private void updateConnectionState(final int resourceId) {
         runOnUiThread(new Runnable()
         {
             @Override
@@ -1316,110 +743,68 @@ public class MagTekDemo extends Activity {
         });
     }
 
-    private void updateDisplay()
-    {
-        runOnUiThread(new Runnable()
-        {
+    private void updateDisplay() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 if (m_connectionState == MTConnectionState.Connected)
-                {
                     updateConnectionState(R.string.connected);
-                }
                 else if (m_connectionState == MTConnectionState.Connecting)
-                {
                     updateConnectionState(R.string.connecting);
-                }
                 else if (m_connectionState == MTConnectionState.Disconnecting)
-                {
                     updateConnectionState(R.string.disconnecting);
-                }
                 else if (m_connectionState == MTConnectionState.Disconnected)
-                {
                     updateConnectionState(R.string.disconnected);
-                }
             }
         });
     }
 
-    private void clearMessage()
-    {
-        runOnUiThread(new Runnable()
-        {
+    private void clearMessage() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 mMessageTextView.setText("");
             }
         });
     }
 
-    private void clearMessage2()
-    {
-        runOnUiThread(new Runnable()
-        {
+    private void clearMessage2() {
+        runOnUiThread(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 mMessageTextView2.setText("");
             }
         });
     }
 
-    private void clearDisplay()
-    {
-        runOnUiThread(new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                mMessageTextView.setText("");
-                mMessageTextView2.setText("");
-                mDataFields.setText("");
-            }
-        });
-    }
 
-    public void sendToDisplay(final String data)
-    {
-        if (data != null)
-        {
-            runOnUiThread(new Runnable()
-            {
+    public void sendToDisplay(final String data) {
+        if (data != null) {
+            runOnUiThread(new Runnable() {
                 @Override
-                public void run()
-                {
+                public void run() {
                     mDataFields.append(data + "\n");
                 }
             });
         }
     }
 
-    private void displayMessage(final String message)
-    {
-        if (message != null)
-        {
-            runOnUiThread(new Runnable()
-            {
+    private void displayMessage(final String message) {
+        if (message != null) {
+            runOnUiThread(new Runnable() {
                 @Override
-                public void run()
-                {
+                public void run() {
                     mMessageTextView.setText(message);
                 }
             });
         }
     }
 
-    private void displayMessage2(final String message)
-    {
-        if (message != null)
-        {
-            runOnUiThread(new Runnable()
-            {
+    private void displayMessage2(final String message) {
+        if (message != null) {
+            runOnUiThread(new Runnable() {
                 @Override
-                public void run()
-                {
+                public void run() {
                     mMessageTextView2.setText(message);
                 }
             });
@@ -1433,20 +818,15 @@ public class MagTekDemo extends Activity {
         return result;
     }
 
-    public String formatStringIfNotValueZero(String format, int data)
-    {
+    public String formatStringIfNotValueZero(String format, int data) {
         String result = "";
-
-        if (data != 0)
-        {
+        if (data != 0) {
             result = String.format(format, data);
         }
-
         return result;
     }
 
-    public String getCardInfo()
-    {
+    public String getCardInfo() {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append(String.format("Tracks.Masked=%s \n", m_scra.getMaskedTracks()));
@@ -1486,57 +866,39 @@ public class MagTekDemo extends Activity {
         stringBuilder.append(formatStringIfNotEmpty("MagTek.Device.Serial=%s \n", m_scra.getMagTekDeviceSerial()));
         stringBuilder.append(formatStringIfNotEmpty("Response.Type=%s \n", m_scra.getResponseType()));
         stringBuilder.append(formatStringIfNotEmpty("TLV.Version=%s \n", m_scra.getTLVVersion()));
-
         stringBuilder.append(String.format("Track.Decode.Status=%s \n", m_scra.getTrackDecodeStatus()));
 
         String tkStatus = m_scra.getTrackDecodeStatus();
 
-        String tk1Status = "01";
-        String tk2Status = "01";
-        String tk3Status = "01";
-
-        if (tkStatus.length() >= 6)
-        {
-            tk1Status = tkStatus.substring(0, 2);
-            tk2Status = tkStatus.substring(2, 4);
-            tk3Status = tkStatus.substring(4, 6);
-
+        if (tkStatus.length() >= 6) {
+            String tk1Status = tkStatus.substring(0, 2);
+            String tk2Status = tkStatus.substring(2, 4);
+            String tk3Status = tkStatus.substring(4, 6);
             stringBuilder.append(String.format("Track1.Status=%s \n", tk1Status));
             stringBuilder.append(String.format("Track2.Status=%s \n", tk2Status));
             stringBuilder.append(String.format("Track3.Status=%s \n", tk3Status));
         }
-
         stringBuilder.append(String.format("SDK.Version=%s \n", m_scra.getSDKVersion()));
-
         stringBuilder.append(String.format("Battery.Level=%d \n", m_scra.getBatteryLevel()));
-
         return stringBuilder.toString();
     }
 
-    public class NoisyAudioStreamReceiver extends BroadcastReceiver
-    {
+    public class NoisyAudioStreamReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if(AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction()))
-            {
-                if (m_connectionType == MTConnectionType.Audio)
-                {
+            if(AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction())) {
+                if (m_connectionType == MTConnectionType.Audio) {
                     if(m_scra.isDeviceConnected())
-                    {
                         closeDevice();
-                    }
                 }
             }
         }
     }
 
-    public class HeadSetBroadCastReceiver extends BroadcastReceiver
-    {
+    public class HeadSetBroadCastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-
-            try
-            {
+            try {
                 String action = intent.getAction();
 
                 if( (action.compareTo(Intent.ACTION_HEADSET_PLUG))  == 0)   //if the action match a headset one
@@ -1544,28 +906,26 @@ public class MagTekDemo extends Activity {
                     int headSetState = intent.getIntExtra("state", 0);      //get the headset state property
                     int hasMicrophone = intent.getIntExtra("microphone", 0);//get the headset microphone property
 
-                    if( (headSetState == 1) && (hasMicrophone == 1))        //headset was unplugged & has no microphone
+                    if ((headSetState != 1) || (hasMicrophone != 1))        //headset was unplugged & has no microphone
                     {
-                    }
-                    else
-                    {
-                        if(AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction()))
-                        {
-                            if (m_connectionType == MTConnectionType.Audio)
-                            {
+                        Log.d("debugJewom", "hollla");
+                        if(AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction())) {
+                            if (m_connectionType == MTConnectionType.Audio) {
                                 if(m_scra.isDeviceConnected())
-                                {
                                     closeDevice();
-                                }
                             }
                         }
+                    }
+                    else {
+                        Log.d("debugJewom", "plugin card reader !");
+                        if (openDevice() != 0)
+                            sendToDisplay("[Failed to connect to the device]");
                     }
 
                 }
 
             }
-            catch(Exception ex)
-            {
+            catch(Exception ex) {
 
             }
         }
