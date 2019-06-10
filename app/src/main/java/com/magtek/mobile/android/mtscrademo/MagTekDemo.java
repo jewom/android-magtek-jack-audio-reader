@@ -63,14 +63,12 @@ public class MagTekDemo extends Activity {
                         break;
                 }
             }
-            catch (Exception ex){ }
-
+            catch (Exception ignored){ }
             return true;
         }
     }
 
-    protected void OnDeviceStateChanged(MTConnectionState deviceState)
-    {
+    protected void OnDeviceStateChanged(MTConnectionState deviceState) {
         setState(deviceState);
         updateDisplay();
         invalidateOptionsMenu();
@@ -112,7 +110,6 @@ public class MagTekDemo extends Activity {
                 sendToDisplay("[Card Data Error]");
                 break;
         }
-
     }
 
     protected void OnCardDataReceived(IMTCardData cardData) {
@@ -174,63 +171,37 @@ public class MagTekDemo extends Activity {
     }
 
     @Override
-    protected void onResume()
-    {
+    protected void onResume() {
         super.onResume();
-
         this.registerReceiver(m_headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
         this.registerReceiver(m_noisyAudioStreamReceiver, new IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY));
-
         Log.i(TAG, "*** App onResume");
     }
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
         super.onPause();
-
         Log.i(TAG, "*** App onPause");
-
-        if (m_scra.isDeviceConnected())
-        {
+        if (m_scra.isDeviceConnected()) {
             if (m_connectionType == MTConnectionType.Audio)
-            {
                 m_scra.closeDevice();
-            }
         }
     }
 
     @Override
-    protected void onStop()
-    {
-        super.onStop();
-
-        Log.i(TAG, "*** App onStop");
-    }
-
-    @Override
-    protected void onDestroy()
-    {
+    protected void onDestroy() {
         Log.i(TAG, "*** App onDestroy");
-
         unregisterReceiver(m_headsetReceiver);
         unregisterReceiver(m_noisyAudioStreamReceiver);
-
-        if (m_scra.isDeviceConnected()) {
+        if (m_scra.isDeviceConnected())
             m_scra.closeDevice();
-        }
-
         super.onDestroy();
     }
 
-    private void displayDeviceFeatures()
-    {
-        if (m_scra != null)
-        {
+    private void displayDeviceFeatures() {
+        if (m_scra != null) {
             MTDeviceFeatures features = m_scra.getDeviceFeatures();
-
-            if (features != null)
-            {
+            if (features != null) {
                 StringBuilder infoSB = new StringBuilder();
                 infoSB.append("[Device Features]\n");
                 infoSB.append("Supported Types: " + (features.MSR ? "(MSR) ":"") + (features.Contact ? "(Contact) ":"") + (features.Contactless ? "(Contactless) ":"") + "\n");
@@ -404,9 +375,7 @@ public class MagTekDemo extends Activity {
                     }
                 }
             }
-            catch(Exception ex) {
-
-            }
+            catch(Exception ignored) { }
         }
     }
 
