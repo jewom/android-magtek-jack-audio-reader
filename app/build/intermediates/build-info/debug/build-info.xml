@@ -5,110 +5,80 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
     plugin-version="3.4.1"
-    timestamp="1559663130150"
-    token="-3839133264068353169"
+    timestamp="1560157714879"
+    token="7539590398400919493"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="80" />
+        duration="650" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="55" />
     <task
         name="verifier"
-        duration="5" />
+        duration="8" />
 
     <artifact
-        location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1559661942523"
+        timestamp="1560154480042"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1559662511775"
+        ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
+        timestamp="1560157714879"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1559663130150"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
     </build>
 

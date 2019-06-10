@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/res/values-en-rAU/values-en-rAU.xml",

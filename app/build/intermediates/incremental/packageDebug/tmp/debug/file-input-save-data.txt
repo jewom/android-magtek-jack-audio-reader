@@ -1,18 +1,18 @@
 #Internal package file, do not edit.
-#Tue Jun 04 17:35:14 CEST 2019
+#Fri Jun 07 10:21:17 CEST 2019
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
 0.baseType=DIRECTORY
 10.path=classes.dex
 5.baseType=DIRECTORY
-1.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/19
+1.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/19
 8.path=classes.dex
-3.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/16
+3.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/20
 4.set=DEX
-5.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/18
-7.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/12
-9.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/14
+5.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/21
+7.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/12
+9.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/14
 1.baseType=DIRECTORY
 0.set=DEX
 6.baseType=DIRECTORY
@@ -25,16 +25,16 @@
 3.path=classes.dex
 10.set=DEX
 5.path=classes.dex
-0.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/17
+0.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/16
 7.path=classes.dex
 9.path=classes.dex
 6.set=DEX
-2.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/13
-4.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/15
+2.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/18
+4.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/11
 3.baseType=DIRECTORY
-6.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/20
-10.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/21
-8.base=/Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/build/intermediates/transforms/dexMerger/debug/11
+6.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/13
+10.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/17
+8.base=/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/transforms/dexMerger/debug/15
 2.set=DEX
 8.baseType=DIRECTORY
 9.set=DEX

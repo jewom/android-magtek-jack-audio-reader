@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:17:1-22:12
@@ -30,59 +30,59 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 	package
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:4:52-98
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:52-98
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:4:5-51
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:1-38:12
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:3:11-69
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:11-69
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:5-65
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:6:19-63
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:19-63
 uses-feature#android.hardware.usb.host
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:7:5-62
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:5-62
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:7:19-59
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:19-59
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:9:5-70
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:5-70
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:9:22-68
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:22-68
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:10:22-77
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:12:5-66
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:5-66
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:12:22-64
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:13:5-80
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:14:5-78
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:14:5-78
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:14:22-76
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:14:22-76
 application
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:16:5-36:19
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:5-36:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:22:5-23:19
@@ -90,45 +90,45 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradl
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:16:18-50
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:18-50
 	tools:ignore
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:19:9-48
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:19:9-48
 	android:icon
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:18:9-42
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:18:9-42
 	android:allowBackup
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:17:9-36
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:17:9-36
 activity#com.magtek.mobile.android.mtscrademo.MagTekDemo
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:21:9-34:20
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:21:9-34:20
 	android:screenOrientation
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:23:13-49
 	android:launchMode
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:24:13-44
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:24:13-44
 	android:uiOptions
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:25:13-57
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:25:13-57
 	android:configChanges
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:22:13-59
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:22:13-59
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:21:19-45
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:21:19-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:28:17-68
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:29:17-76
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:29:27-74
 meta-data#android.support.UI_OPTIONS
-ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:32:13-33:60
+ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:32:13-33:60
 	android:value
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:33:17-57
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:33:17-57
 	android:name
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml:32:24-65
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:32:24-65
 uses-sdk
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:20:5-44
@@ -181,13 +181,13 @@ MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transf
 MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/Downloads/99510109-133-Web/MTSCRA/SampleCode/MTSCRADemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
