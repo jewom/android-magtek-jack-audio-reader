@@ -1,30 +1,18 @@
 package com.magtek.mobile.android.mtscrademo;
 
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.res.Configuration;
 import android.media.AudioManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Handler.Callback;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -35,12 +23,11 @@ import com.magtek.mobile.android.mtlib.MTSCRAEvent;
 import com.magtek.mobile.android.mtlib.MTEMVEvent;
 import com.magtek.mobile.android.mtlib.MTConnectionState;
 import com.magtek.mobile.android.mtlib.MTCardDataState;
-import com.magtek.mobile.android.mtlib.MTDeviceConstants;
 import com.magtek.mobile.android.mtlib.IMTCardData;
 
 public class MagTekDemo extends Activity {
-    private final static String TAG = "MagTekJewom";
 
+    private final static String TAG = "MagTekJewom";
     private TextView mMessageTextView;
     private TextView mMessageTextView2;
     private TextView mConnectionStateField;
@@ -49,12 +36,9 @@ public class MagTekDemo extends Activity {
     private int m_audioVolume;
     private MTSCRA m_scra;
     private MTConnectionType m_connectionType;
-    private Object m_syncEvent = null;
-    private String m_syncData = "";
     private MTConnectionState m_connectionState = MTConnectionState.Disconnected;
     private final HeadSetBroadCastReceiver m_headsetReceiver = new HeadSetBroadCastReceiver();
     private final NoisyAudioStreamReceiver m_noisyAudioStreamReceiver = new NoisyAudioStreamReceiver();
-    private boolean[] mTypeChecked = new boolean[] {false, true, false};
     private Handler m_scraHandler = new Handler(new SCRAHandlerCallback());
 
     private class SCRAHandlerCallback implements Callback  {
@@ -79,10 +63,7 @@ public class MagTekDemo extends Activity {
                         break;
                 }
             }
-            catch (Exception ex)
-            {
-
-            }
+            catch (Exception ex){ }
 
             return true;
         }
@@ -145,29 +126,9 @@ public class MagTekDemo extends Activity {
         sendToDisplay(cardData.getTLVPayload());
     }
 
-    protected void notifySyncData(String data) {
-        if (m_syncEvent != null)
-        {
-            synchronized(m_syncEvent)
-            {
-                m_syncData = data;
-                m_syncEvent.notifyAll();
-            }
-        }
-    }
-
-
-
-
     protected void OnDeviceExtendedResponse(String data) {
         sendToDisplay("[Device Extended Response]");
         sendToDisplay(data);
-    }
-
-
-    protected void OnUserSelectionRequest(byte[] data) {
-        sendToDisplay("[User Selection Request]");
-        sendToDisplay(TLVParser.getHexString(data));
     }
 
 
@@ -262,80 +223,6 @@ public class MagTekDemo extends Activity {
         super.onDestroy();
     }
 
-
-    private void sendSetDateTimeCommand()
-    {
-        Calendar now = Calendar.getInstance();
-
-        int month = now.get(Calendar.MONTH) + 1;
-        int day = now.get(Calendar.DAY_OF_MONTH);
-        int hour = now.get(Calendar.HOUR_OF_DAY);
-        int minute = now.get(Calendar.MINUTE);
-        int second = now.get(Calendar.SECOND);
-        int year = now.get(Calendar.YEAR) - 2008;
-
-        String dateTimeString = String.format("%1$02x%2$02x%3$02x%4$02x%5$02x00%6$02x", month, day, hour, minute, second, year);
-        String command = "49220000030C001C0000000000000000000000000000000000" + dateTimeString + "00000000";
-        sendCommand(command);
-    }
-
-    private class getDeviceInfoTask extends AsyncTask<String, Void, String>
-    {
-        @Override
-        protected String doInBackground(String... params)
-        {
-            String response = sendCommandSync("000100");
-            sendToDisplay("[Firmware ID]");
-            sendToDisplay(response);
-
-            String response2 = sendCommandSync("000103");
-            sendToDisplay("[Device SN]");
-            sendToDisplay(response2);
-
-            String response3 = sendCommandSync("1500");
-            sendToDisplay("[Security Level]");
-            sendToDisplay(response3);
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-        }
-    }
-
-    private class getBatteryLevelTask extends AsyncTask<String, Void, String>
-    {
-        @Override
-        protected String doInBackground(String... params)
-        {
-            long level = m_scra.getBatteryLevel();
-            sendToDisplay("Battery Level=" + level);
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-        }
-    }
-
     private void displayDeviceFeatures()
     {
         if (m_scra != null)
@@ -354,53 +241,6 @@ public class MagTekDemo extends Activity {
             }
         }
     }
-
-
-    public String sendCommandSync(String command)
-    {
-        String response = "";
-
-        m_syncData = "";
-        m_syncEvent = new Object();
-
-        synchronized(m_syncEvent)
-        {
-            sendCommand(command);
-
-            try
-            {
-                m_syncEvent.wait(3000);
-                response = new String(m_syncData);
-            }
-            catch (InterruptedException ex)
-            {
-                // response timed out
-            }
-        }
-
-        m_syncEvent = null;
-
-        return response;
-    }
-
-    public int sendCommand(String command)
-    {
-        int result = MTSCRA.SEND_COMMAND_ERROR;
-
-
-        if (m_scra != null)
-        {
-            sendToDisplay("[Sending Command]");
-            sendToDisplay(command);
-
-            result = m_scra.sendCommandToDevice(command);
-        }
-
-        return result;
-    }
-
-
-
 
 
     public long closeDevice() {
@@ -502,42 +342,6 @@ public class MagTekDemo extends Activity {
         }
     }
 
-    private void displayMessage(final String message) {
-        if (message != null) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mMessageTextView.setText(message);
-                }
-            });
-        }
-    }
-
-    private void displayMessage2(final String message) {
-        if (message != null) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mMessageTextView2.setText(message);
-                }
-            });
-        }
-    }
-
-    public String formatStringIfNotEmpty(String format, String data) {
-        String result = "";
-        if (!data.isEmpty())
-            result = String.format(format, data);
-        return result;
-    }
-
-    public String formatStringIfNotValueZero(String format, int data) {
-        String result = "";
-        if (data != 0) {
-            result = String.format(format, data);
-        }
-        return result;
-    }
 
     public String getCardInfo() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -598,16 +402,13 @@ public class MagTekDemo extends Activity {
                         if (openDevice() != 0)
                             sendToDisplay("[Failed to connect to the device]");
                     }
-
                 }
-
             }
             catch(Exception ex) {
 
             }
         }
     }
-
 
 
 }

@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.4.1"
-    timestamp="1560157714879"
+    timestamp="1560158204690"
     token="7539590398400919493"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="650" />
+        duration="174" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="55" />
+        duration="38" />
     <task
         name="verifier"
-        duration="8" />
+        duration="12" />
 
     <artifact
         location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -74,8 +74,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
-        timestamp="1560157714879"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1560158204690"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
