@@ -318,6 +318,7 @@ public class MagTekDemo extends Activity {
         StringBuilder stringBuilder = new StringBuilder();
 
 
+        /*
         stringBuilder.append(String.format("Card.Name=%s \n", m_scra.getCardName()));
         stringBuilder.append(String.format("Card.Exp.Date=%s \n", m_scra.getCardExpDate()));
         stringBuilder.append(String.format("Card.IIN=%s \n", m_scra.getCardIIN()));
@@ -330,6 +331,24 @@ public class MagTekDemo extends Activity {
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardIIN()));
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardServiceCode()));
 
+*/
+
+
+        stringBuilder.append(String.format("util =   %s \n", m_scra.getKSN()));
+
+
+        //byte[] bdk = "0123456789ABCDEFFEDCBA9876543210".getBytes();
+        byte[] bdk = "b2395cd7d466f6e1eb82602e8e69b750".getBytes();
+        byte[] ksn = m_scra.getKSN().getBytes();
+
+
+        try {
+            byte[] test = Dukpt.computeKey(bdk, ksn);
+            Log.d("jewomDebug", "" + test.length);
+        } catch (Exception e) {
+            Log.d("jewomDebug", "" + e);
+            e.printStackTrace();
+        }
 
 
         return stringBuilder.toString();

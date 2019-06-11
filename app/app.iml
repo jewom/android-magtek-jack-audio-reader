@@ -22,6 +22,37 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/mtscra.jar:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/usbserial.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.31/e652770b6416c6d85934086899ffed3eccd35813/kotlin-stdlib-jdk7-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/jewom/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.31/57bdeb88c9265052448a7a8422ed64ad92e9b262/kotlin-android-extensions-1.3.31.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes" />
@@ -93,7 +124,9 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundle_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check_manifest_result" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compatible_screen_manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/duplicate_classes_check" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/external_libs_dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
@@ -104,6 +137,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_jni_libs" />
@@ -121,11 +155,13 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/validate_signing_config" />
+      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:documentfile:28.0.0@aar" level="project" />
@@ -144,9 +180,12 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:print:28.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/usbserial.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:versionedparcelable:28.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.31@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:viewpager:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/mtscra.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:28.0.0@aar" level="project" />

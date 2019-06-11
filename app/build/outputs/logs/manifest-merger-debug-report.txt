@@ -4,32 +4,32 @@ ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
@@ -83,12 +83,12 @@ ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/
 		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:14:22-76
 application
 ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:5-36:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:18-91
 	android:label
 		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:18-50
 	tools:ignore
@@ -129,58 +129,58 @@ uses-sdk
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/d636e8f63544249b991c4eac6bcdb66a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/511a75b7097399abc24904ebf3c1f223/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e1f6d4dca02e3ef0dc4fc7ae4a9b256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/aa1f09fbd1837a91f3a621735c5dd168/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/84992cdab4e8e7251cca11fa6d401ca4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/22c03216873c7c7458a8c1eae6db9a5b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/578e76fa18e456e79008e73ded6a593a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8d85c8b70e055c06269ef43076b02a64/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4a8c6c579e402c7fd47b4edfcc63e571/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/95c45440da8f60f5abca259bad9a897f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/74961ed891f38f9b9e235de2eae2d4ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8206920bf9805ac810163e592a161138/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ef72b1ab32f482a190bda317c9c106ce/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1c4aadf4d4234e40915e8ac73c86c5c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/892e3722a9172c68c1c28952900d4a69/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/4d9ccc7c9d71ecb7b8286b9ff9ddc462/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/71ab787971e8e3fdd010e1a7ac464960/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/99c7bea968b4a4000d4018c4bfec2550/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2b21ea87d5ef96a4fe83a056308ed760/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/543872fcb3cf4c979493121ff4223e26/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0ba5d448451ab7de7153007131581c9f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/6aec45ad45d1b339c25472cd587d3ed0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1efc70c0d868870de571462eded1dd12/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/526170cb6c74e4ab103b7d30bdb4e06f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/0718f8704ffe73a56946814c4219b59b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f877054df5e46d9b499e9c28ab7036c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:20:5-44
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
