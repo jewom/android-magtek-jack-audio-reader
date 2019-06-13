@@ -1,4 +1,4 @@
-#Thu Jun 13 14:48:20 CEST 2019
+#Thu Jun 13 16:06:08 CEST 2019
 base.0=/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

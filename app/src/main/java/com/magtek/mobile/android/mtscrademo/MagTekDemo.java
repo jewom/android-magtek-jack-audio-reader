@@ -25,6 +25,8 @@ import com.magtek.mobile.android.mtlib.MTConnectionState;
 import com.magtek.mobile.android.mtlib.MTCardDataState;
 import com.magtek.mobile.android.mtlib.IMTCardData;
 
+import java.util.regex.Pattern;
+
 public class MagTekDemo extends Activity {
 
     private final static String TAG = "MagTekJewom";
@@ -335,7 +337,6 @@ public class MagTekDemo extends Activity {
 
         try {
             // Setup
-            //String bdkString = "0123456789ABCDEFFEDCBA9876543210";
             String bdkString = "b2395cd7d466f6e1eb82602e8e69b750";
             String ksnString = m_scra.getKSN();
             String track2String = m_scra.getTrack2();
@@ -349,8 +350,23 @@ public class MagTekDemo extends Activity {
             data = Dukpt.decryptTripleDes(key, data);
             String dataOutput = new String(data, "UTF-8");
             Log.d("jewomDebug", "" + key.length);
+            dataOutput = dataOutput.replace(";", "");
+            dataOutput = dataOutput.replace("?", "");
+            dataOutput = dataOutput.replace(">", "");
+            dataOutput = dataOutput.replace("<", "");
 
             stringBuilder.append(String.format("CARD DECRYPTED =   %s \n", dataOutput));
+
+            String [] cardInfo = dataOutput.split("=");
+            String card = cardInfo[0];
+            String expiryFull = cardInfo[1];
+            String expriryYear = expiryFull.substring(0, 2);
+            String expiryMonth = expiryFull.substring(2, 4);
+
+            stringBuilder.append(String.format("CARD =   %s \n", card));
+            stringBuilder.append(String.format("EXPIRY MONTH =   %s \n", expiryMonth));
+            stringBuilder.append(String.format("EXPIRY YEAR =   %s \n", expriryYear));
+
         } catch (Exception e) {
             Log.d("jewomDebug", "" + e.getMessage());
             e.printStackTrace();
