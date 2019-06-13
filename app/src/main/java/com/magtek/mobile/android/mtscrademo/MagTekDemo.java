@@ -318,7 +318,7 @@ public class MagTekDemo extends Activity {
         StringBuilder stringBuilder = new StringBuilder();
 
 
-        /*
+
         stringBuilder.append(String.format("Card.Name=%s \n", m_scra.getCardName()));
         stringBuilder.append(String.format("Card.Exp.Date=%s \n", m_scra.getCardExpDate()));
         stringBuilder.append(String.format("Card.IIN=%s \n", m_scra.getCardIIN()));
@@ -331,7 +331,7 @@ public class MagTekDemo extends Activity {
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardIIN()));
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardServiceCode()));
 
-*/
+
 
 
         stringBuilder.append(String.format("util =   %s \n", m_scra.getKSN()));
