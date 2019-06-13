@@ -9,7 +9,6 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.math.BigInteger;
 import java.security.InvalidParameterException;
-import java.util.BitSet;
 
 /**
  * The Dukpt class acts a name-space for the Derived
@@ -36,8 +35,8 @@ import java.util.BitSet;
  * the static constant NUM_OVERWRITES but the user can supply a different number
  * should they desire the option.
  *
- * @author Software Verde: Andrew Groot
- * @author Software Verde: Josh Green
+ * @author Antoine Averlant
+ * @author Antoine Averlant
  */
 public final class Dukpt {
     public static final int NUM_OVERWRITES = 3;

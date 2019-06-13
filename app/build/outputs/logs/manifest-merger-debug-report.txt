@@ -1,193 +1,189 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/915737ac7ecd2a26845b86aaa34d071f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/7168ef6b02566dd369a63e15ef38ff0e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/574bcd1bc482016f1280845aaf344f33/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/908e408ca726ba9e76f67974daa98c50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122909fc526d6608c9fade79a840872a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/58606856bbd9c3f2909c98fcefd1cbe5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/738bb0c7460b5e09b34771b193ebcd08/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ec4e7a6b25f9c325ebbbe612bf0aaf11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/05cf89d319a7fefb313ff90f5936fd9c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/080a48d0318068eeb1bcd85d413b1bd5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/d8150d84740584444174fb90554deaeb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/5cf24597220ea5d61bddabb56f0e9b3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/56edfb81cfba53a68f8108ea1b507d8f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/70afcea2de4f590b4b297ff7e9fd00e1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/2633663ee227f1f098d04ac478eb7f2f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/8128fb59a4baa7bca6b567a26fe45144/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/bf8f8fbd1cea05156d19b31c6329def5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/18771a3c4420254b595a5e1fdb65bd3e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/db4cba0f1afdf589fa7a535ede26f7e3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/83e172273c917c29b98f4f8fe3b86184/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ae68913ac5a5ce27aeb090f79c13c2f0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/9b30d3030c82887e98a3071bea9ef64d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/e29539217a4fed3a9163130ce1e99dd8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/12c501d0c2502e0695e106b508c431b0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
 	package
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:52-98
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:52-98
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:5-51
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:4:5-51
 	android:versionCode
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-38:12
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:1-37:12
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:11-69
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:3:11-69
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:5-65
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:19-63
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:6:19-63
 uses-feature#android.hardware.usb.host
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:5-62
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:5-62
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:19-59
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:7:19-59
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:5-70
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:5-70
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:22-68
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:9:22-68
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:22-77
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:10:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:22-78
-uses-permission#android.permission.INTERNET
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:5-66
-	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:22-64
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:11:22-78
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:5-80
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:14:5-78
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:5-78
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:14:22-76
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:13:22-76
 application
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:5-36:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:15:5-35:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:18-50
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:15:18-50
 	tools:ignore
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:19:9-48
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:18:9-48
 	android:icon
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:18:9-42
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:17:9-42
 	android:allowBackup
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:17:9-36
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:16:9-36
 activity#com.magtek.mobile.android.mtscrademo.MagTekDemo
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:21:9-34:20
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:20:9-33:20
 	android:screenOrientation
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:22:13-49
 	android:launchMode
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:24:13-44
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:23:13-44
 	android:uiOptions
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:25:13-57
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:24:13-57
 	android:configChanges
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:22:13-59
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:21:13-59
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:21:19-45
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:20:19-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:17-68
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:27:17-68
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:29:17-76
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:17-76
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:28:27-74
 meta-data#android.support.UI_OPTIONS
-ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:32:13-33:60
+ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:31:13-32:60
 	android:value
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:33:17-57
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:32:17-57
 	android:name
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:32:24-65
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml:31:24-65
 uses-sdk
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/915737ac7ecd2a26845b86aaa34d071f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/915737ac7ecd2a26845b86aaa34d071f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/7168ef6b02566dd369a63e15ef38ff0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/7168ef6b02566dd369a63e15ef38ff0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/574bcd1bc482016f1280845aaf344f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/574bcd1bc482016f1280845aaf344f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/908e408ca726ba9e76f67974daa98c50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/908e408ca726ba9e76f67974daa98c50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122909fc526d6608c9fade79a840872a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122909fc526d6608c9fade79a840872a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/58606856bbd9c3f2909c98fcefd1cbe5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/58606856bbd9c3f2909c98fcefd1cbe5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/738bb0c7460b5e09b34771b193ebcd08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/738bb0c7460b5e09b34771b193ebcd08/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ec4e7a6b25f9c325ebbbe612bf0aaf11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ec4e7a6b25f9c325ebbbe612bf0aaf11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/05cf89d319a7fefb313ff90f5936fd9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/05cf89d319a7fefb313ff90f5936fd9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/080a48d0318068eeb1bcd85d413b1bd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/080a48d0318068eeb1bcd85d413b1bd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/d8150d84740584444174fb90554deaeb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/d8150d84740584444174fb90554deaeb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/5cf24597220ea5d61bddabb56f0e9b3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/5cf24597220ea5d61bddabb56f0e9b3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/56edfb81cfba53a68f8108ea1b507d8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/56edfb81cfba53a68f8108ea1b507d8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/70afcea2de4f590b4b297ff7e9fd00e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/70afcea2de4f590b4b297ff7e9fd00e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/2633663ee227f1f098d04ac478eb7f2f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/2633663ee227f1f098d04ac478eb7f2f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/8128fb59a4baa7bca6b567a26fe45144/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/8128fb59a4baa7bca6b567a26fe45144/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/bf8f8fbd1cea05156d19b31c6329def5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/bf8f8fbd1cea05156d19b31c6329def5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/18771a3c4420254b595a5e1fdb65bd3e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/18771a3c4420254b595a5e1fdb65bd3e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/db4cba0f1afdf589fa7a535ede26f7e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/db4cba0f1afdf589fa7a535ede26f7e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/83e172273c917c29b98f4f8fe3b86184/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/83e172273c917c29b98f4f8fe3b86184/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ae68913ac5a5ce27aeb090f79c13c2f0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/ae68913ac5a5ce27aeb090f79c13c2f0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/9b30d3030c82887e98a3071bea9ef64d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/9b30d3030c82887e98a3071bea9ef64d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/e29539217a4fed3a9163130ce1e99dd8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/antoine/.gradle/caches/transforms-2/files-2.1/e29539217a4fed3a9163130ce1e99dd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/12c501d0c2502e0695e106b508c431b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/antoine/.gradle/caches/transforms-2/files-2.1/12c501d0c2502e0695e106b508c431b0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		ADDED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/src/main/AndroidManifest.xml

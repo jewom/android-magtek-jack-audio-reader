@@ -114,13 +114,15 @@ public class MagTekDemo extends Activity {
 
     protected void OnCardDataReceived(IMTCardData cardData) {
         sendToDisplay("[Raw Data]");
+        //long a = cardData.getCardDataCRC();
+        //String pan = cardData.getCardPAN();
         sendToDisplay(m_scra.getResponseData());
 
         sendToDisplay("[Card Data]");
         sendToDisplay(getCardInfo());
 
-        sendToDisplay("[TLV Payload]");
-        sendToDisplay(cardData.getTLVPayload());
+        //sendToDisplay("[TLV Payload]");
+        //sendToDisplay(cardData.getTLVPayload());
     }
 
     protected void OnDeviceExtendedResponse(String data) {
@@ -317,8 +319,6 @@ public class MagTekDemo extends Activity {
     public String getCardInfo() {
         StringBuilder stringBuilder = new StringBuilder();
 
-
-
         stringBuilder.append(String.format("Card.Name=%s \n", m_scra.getCardName()));
         stringBuilder.append(String.format("Card.Exp.Date=%s \n", m_scra.getCardExpDate()));
         stringBuilder.append(String.format("Card.IIN=%s \n", m_scra.getCardIIN()));
@@ -331,25 +331,30 @@ public class MagTekDemo extends Activity {
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardIIN()));
         stringBuilder.append(String.format("jewomm=%s \n", m_scra.getCardServiceCode()));
 
-
-
-
         stringBuilder.append(String.format("util =   %s \n", m_scra.getKSN()));
 
-
-        //byte[] bdk = "0123456789ABCDEFFEDCBA9876543210".getBytes();
-        byte[] bdk = "b2395cd7d466f6e1eb82602e8e69b750".getBytes();
-        byte[] ksn = m_scra.getKSN().getBytes();
-
-
         try {
-            byte[] test = Dukpt.computeKey(bdk, ksn);
-            Log.d("jewomDebug", "" + test.length);
+            // Setup
+            //String bdkString = "0123456789ABCDEFFEDCBA9876543210";
+            String bdkString = "b2395cd7d466f6e1eb82602e8e69b750";
+            String ksnString = m_scra.getKSN();
+            String track2String = m_scra.getTrack2();
+
+            byte[] bdk = Dukpt.toByteArray(bdkString);
+            byte[] ksn = Dukpt.toByteArray(ksnString);
+            byte[] data = Dukpt.toByteArray(track2String);
+
+            // Action
+            byte[] key = Dukpt.computeKey(bdk, ksn);
+            data = Dukpt.decryptTripleDes(key, data);
+            String dataOutput = new String(data, "UTF-8");
+            Log.d("jewomDebug", "" + key.length);
+
+            stringBuilder.append(String.format("CARD DECRYPTED =   %s \n", dataOutput));
         } catch (Exception e) {
-            Log.d("jewomDebug", "" + e);
+            Log.d("jewomDebug", "" + e.getMessage());
             e.printStackTrace();
         }
-
 
         return stringBuilder.toString();
     }

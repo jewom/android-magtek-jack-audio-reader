@@ -27,7 +27,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$MODULE_DIR$/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/mtscra.jar:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/usbserial.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/be261e789ef136e2c0addd069750a30e/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/ca3071d10579c01188b445adcd24aa7c/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/63831687551f64dbf3d9fdd2b351b28f/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/432d657627056774248c219d0f4edd5a/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/5f668091395506718ac4d47675f6c5c2/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/3e226ca3b7157b1a163aea0d8f2af275/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/2eb6a63bac056d970e5de2ddc8d6d964/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/8c1745645e11ee6b08bcd050485cb4aa/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/58a248527e4645be5d5055b72f492d94/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/1f17608986cedcbfcfc5802cbbe527ea/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/296b9267fe815012d46d2db2cb30e993/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/031a96e5fc1c0c3f3ad4a15ce0c2fd0e/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/33f2b302fc93f1ef682ccb3c5bb82daf/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/85f80fb5ae2cbef269f0a903cc857b9d/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/64f9597479eb513bf16cf0ad877a2417/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/275b8fc84247b835275a2f5992be2bbf/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/b30a92dc6b4a0dee0c9481a25fa4e674/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/37c6105e396d9f6051b0c02cf38c67d5/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/9242eef8b41a4a0beaaaeda12ca258f1/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/1083ae6fabb2d15089f9188dcec4558a/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/f8084e778cb20ef953ec668a1537cc18/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/f6f0ed28db9804a7e5c4874698c49aa7/jars/classes.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/036747a636483188749a6bb6c3326ab6/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/b81d15f6da22782fd2e9d003849fe25f/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/jewom/.gradle/caches/transforms-2/files-2.1/603caae6b68c85bec81be500a14544d5/jars/classes.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.31/e652770b6416c6d85934086899ffed3eccd35813/kotlin-stdlib-jdk7-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/jewom/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/jewom/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="classpath" value="$MODULE_DIR$/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar:/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/libs/mtscra.jar:/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/libs/usbserial.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/915737ac7ecd2a26845b86aaa34d071f/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/7168ef6b02566dd369a63e15ef38ff0e/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/574bcd1bc482016f1280845aaf344f33/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/908e408ca726ba9e76f67974daa98c50/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/122909fc526d6608c9fade79a840872a/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/58606856bbd9c3f2909c98fcefd1cbe5/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/738bb0c7460b5e09b34771b193ebcd08/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/ec4e7a6b25f9c325ebbbe612bf0aaf11/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/05cf89d319a7fefb313ff90f5936fd9c/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/080a48d0318068eeb1bcd85d413b1bd5/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/d8150d84740584444174fb90554deaeb/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/5cf24597220ea5d61bddabb56f0e9b3f/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/56edfb81cfba53a68f8108ea1b507d8f/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/70afcea2de4f590b4b297ff7e9fd00e1/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/122a062e4df7d177d81b21f48a02de92/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/53ee3fd6419170550310564b61618098/jars/classes.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/2633663ee227f1f098d04ac478eb7f2f/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/8128fb59a4baa7bca6b567a26fe45144/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/bf8f8fbd1cea05156d19b31c6329def5/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/18771a3c4420254b595a5e1fdb65bd3e/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/db4cba0f1afdf589fa7a535ede26f7e3/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/83e172273c917c29b98f4f8fe3b86184/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/ae68913ac5a5ce27aeb090f79c13c2f0/jars/classes.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/9b30d3030c82887e98a3071bea9ef64d/jars/classes.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/e29539217a4fed3a9163130ce1e99dd8/jars/classes.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/antoine/.gradle/caches/transforms-2/files-2.1/12c501d0c2502e0695e106b508c431b0/jars/classes.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.31/e652770b6416c6d85934086899ffed3eccd35813/kotlin-stdlib-jdk7-1.3.31.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/antoine/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/antoine/Library/Android/sdk/platforms/android-28/android.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="app_debug" />
@@ -79,13 +79,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/debug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/assets" type="java-test-resource" />
@@ -93,6 +86,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
@@ -120,7 +120,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/apk_list" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundle_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check_manifest_result" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compatible_screen_manifest" />
@@ -137,6 +136,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_jni_libs" />
@@ -145,7 +145,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/metadata_feature_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/processed_res" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shader_assets" />
@@ -154,7 +153,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/validate_signing_config" />
-      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
@@ -170,23 +168,22 @@
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:loader:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/libs/usbserial.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:collections:28.0.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cursoradapter:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:print:28.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/libs/mtscra.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/usbserial.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:versionedparcelable:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:viewpager:28.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/libs/mtscra.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:28.0.0@jar" level="project" />
@@ -197,5 +194,6 @@
     <orderEntry type="library" name="Gradle: com.android.support:coordinatorlayout:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:customview:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout:28.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar:unspecified@jar" level="project" />
   </component>
 </module>

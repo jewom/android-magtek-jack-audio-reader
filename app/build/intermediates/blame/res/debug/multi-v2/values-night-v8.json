@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jewom/StudioProjects/android-magtek-jack-audio-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/antoine/Development/TeamGeny/android-magtek-jack-audio-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/jewom/.gradle/caches/transforms-2/files-2.1/a60d21b58a2eb5459cd188ad6c58d8ef/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/antoine/.gradle/caches/transforms-2/files-2.1/915737ac7ecd2a26845b86aaa34d071f/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
