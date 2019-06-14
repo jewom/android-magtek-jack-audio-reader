@@ -12,8 +12,6 @@ package com.magtek.mobile.android.mtscrademo;
  * encapsulated environment to the user (i.e. the user will always receive and be using
  * this BitSet, not a java.util.BitSet, unless they explicitly ask for the latter).
  *
- * @author Antoine Averlant
- * @author Antoine Averlant
  */
 public class BitSet extends java.util.BitSet {
     public static final int DEFAULT_SIZE = 8;
